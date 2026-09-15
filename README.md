@@ -120,6 +120,8 @@ run_sensitivity.py       parameter sweep over window and threshold
 run_diagnostics.py       diagnostic runs
 output/                  per-verse scores, derived tables, dashboards
 docs/                    the published site (GitHub Pages)
+                         isaiah.html is self-contained: Plotly.js is bundled in,
+                         so it opens from a USB stick with no network
 ```
 
 ## What the method cannot do

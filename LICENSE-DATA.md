@@ -21,6 +21,9 @@ provided you give appropriate credit. Suggested attribution:
   cached in `src/` (not redistributed here). Licensed CC BY 4.0 by that project.
 - **English renderings** shown in the dashboard tooltips are taken from the
   **World English Bible**, which is in the public domain.
+- **Plotly.js** v2.26.0 is bundled directly inside `docs/isaiah.html` so that the
+  dashboard works without a network connection. Copyright 2012-2023 Plotly, Inc.,
+  MIT licence; its copyright header is preserved in the file.
 - **Models.** `Norod78/hebrew-gpt_neo-small` and `dicta-il/dictabert` are
   distributed by their respective authors under their own licences; this
   repository pins specific revisions but does not redistribute the weights.
