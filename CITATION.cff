@@ -1,0 +1,19 @@
+cff-version: 1.2.0
+title: "Neural Seismography: detecting redactional seams in the Book of Isaiah with dual-model transformer perplexity"
+message: "If you use this software or its results, please cite it as below."
+type: software
+authors:
+  - family-names: Ziemińska
+    given-names: Agnieszka Blanka
+    orcid: "https://orcid.org/0000-0002-8439-6019"
+    affiliation: "Pontifical University of John Paul II, Kraków; Centre for Digital Humanities, IBL PAN, Warsaw"
+repository-code: "https://github.com/Agnieszkachr/neural-seismography"
+url: "https://agnieszkachr.github.io/neural-seismography/"
+keywords:
+  - digital humanities
+  - computational stylometry
+  - Hebrew Bible
+  - redaction criticism
+  - language models
+license: MIT
+year: 2026

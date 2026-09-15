@@ -1,0 +1,17 @@
+# Cached Hebrew source texts — downloaded on first run from openscriptures/morphhb
+src/
+
+__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+.venv/
+venv/
+
+# Office lock files and archives
+~$*
+*.zip
+.DS_Store
+Thumbs.db
+
+# Scratch diagnostics
+diag_results.txt

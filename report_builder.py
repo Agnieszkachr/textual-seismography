@@ -1,0 +1,427 @@
+"""
+report_builder.py — Rich multi-section HTML report for the Ensemble Seismograph.
+
+Sections:
+  1. Chapter Overview  — grouped bar chart of mean Z-scores per chapter
+  2. Seismograph       — dual Z-score lines; click any point to read verse
+  3. Fracture Table    — sortable list of top verses by CFI / Shared Seam
+"""
+
+import json
+import pandas as pd
+
+
+def build_report_html(df: pd.DataFrame, book_name: str, z_threshold: float = 2.0, pearson_r: float = 0.0, spearman_rho: float = 0.0) -> str:
+    """Return a self-contained HTML string."""
+
+    # ── Chapter aggregates ──────────────────────────────────────────────
+    df2 = df.copy()
+    df2["chapter"] = df2["verse_id"].apply(lambda x: int(x.split(".")[1]))
+    ch = (
+        df2.groupby("chapter")
+        .agg(
+            mean_gpt=("global_z_gpt", "mean"),
+            mean_dicta=("global_z_dicta", "mean"),
+            n_seams=("Strict_Shared_Seam", "sum"),
+        )
+        .reset_index()
+    )
+
+    # ── Summary stats ───────────────────────────────────────────────────
+    n_v = len(df)
+    n_gpt    = int((df["global_z_gpt"]   >= z_threshold).sum())
+    n_dicta  = int((df["global_z_dicta"] >= z_threshold).sum())
+    n_shared = int(df["Strict_Shared_Seam"].sum())
+
+    # ── Seams / fracture table rows ─────────────────────────────────────
+    seams = df[df["Strict_Shared_Seam"]].sort_values("CFI_mag", ascending=False)
+    if seams.empty:
+        seams = df.nlargest(30, "CFI_mag")
+        note = (
+            f"No strict shared seams at Z≥{z_threshold}. "
+            "Showing top 30 verses by Combined Fracture Index."
+        )
+    else:
+        note = (
+            f"{n_shared} verse(s) flagged by both models under FDR control, "
+            "sorted by CFI."
+        )
+
+    rows_html = ""
+    for _, r in seams.iterrows():
+        badge = "<span class='badge'>SHARED</span>" if r["Strict_Shared_Seam"] else ""
+        gc = " hi" if r["global_z_gpt"]   >= z_threshold else ""
+        dc = " hi" if r["global_z_dicta"] >= z_threshold else ""
+        rows_html += (
+            f"<tr class=\"{'sr' if r['Strict_Shared_Seam'] else ''}\">"
+            f"<td>{r['verse_id']}</td>"
+            f"<td class='heb'>{r['text']}</td>"
+            f"<td class='n{gc}'>{r['global_z_gpt']:.3f}</td>"
+            f"<td class='n{dc}'>{r['global_z_dicta']:.3f}</td>"
+            f"<td class='n cf'>{r['CFI_mag']:.3f}</td>"
+            f"<td class='n'>{r.get('cfi_percentile', 0.0):.1f}</td>"
+            f"<td>{badge}</td></tr>\n"
+        )
+
+    # ── Composite / CFI seams table rows ─────────────────────────────────
+    cfi_seams = df[df["Significant_CFI_Seam"] & ~df["Strict_Shared_Seam"]].sort_values("CFI_mag", ascending=False)
+    cfi_rows_html = ""
+    for _, r in cfi_seams.iterrows():
+        gc = " hi" if r["global_z_gpt"]   >= z_threshold else ""
+        dc = " hi" if r["global_z_dicta"] >= z_threshold else ""
+        cfi_rows_html += (
+            f"<tr>"
+            f"<td>{r['verse_id']}</td>"
+            f"<td class='heb'>{r['text']}</td>"
+            f"<td class='n{gc}'>{r['global_z_gpt']:.3f}</td>"
+            f"<td class='n{dc}'>{r['global_z_dicta']:.3f}</td>"
+            f"<td class='n cf'>{r['CFI_mag']:.3f}</td>"
+            f"<td class='n'>{r.get('cfi_percentile', 0.0):.1f}</td>"
+            f"<td><span class='badge' style='background:rgba(233,196,106,0.18);color:#e9c46a;'>COMPOSITE</span></td></tr>\n"
+        )
+
+    # ── Chapter X-axis ticks ─────────────────────────────────────────────
+    ch_starts: dict[int, int] = {}
+    for i, vid in enumerate(df["verse_id"]):
+        c = int(vid.split(".")[1])
+        if c not in ch_starts:
+            ch_starts[c] = i
+    tv_js  = json.dumps(list(ch_starts.values()))
+    tt_js  = json.dumps([str(k) for k in ch_starts.keys()])
+
+    # ── JS data payloads ────────────────────────────────────────────────
+    vcols = ["verse_id", "text", "global_z_gpt", "global_z_dicta", "CFI_mag", "Strict_Shared_Seam", "Significant_CFI_Seam", "Is_Regime_Change", "Regime_ID"]
+    verses_js  = df[vcols].to_json(orient="records", force_ascii=False)
+    chapter_js = ch.to_json(orient="records", force_ascii=False)
+
+    # ── Render ──────────────────────────────────────────────────────────
+    return _HTML.format(
+        book=book_name,
+        z=z_threshold,
+        n_v=f"{n_v:,}",
+        n_gpt=n_gpt,
+        n_dicta=n_dicta,
+        n_shared=n_shared,
+        n_cfi=len(cfi_seams),
+        note=note,
+        rows=rows_html,
+        cfi_rows=cfi_rows_html,
+        verses_js=verses_js,
+        chapter_js=chapter_js,
+        tv=tv_js,
+        tt=tt_js,
+        n_minus1=n_v - 1,
+        pearson_r=pearson_r,
+        spearman_rho=spearman_rho,
+    )
+
+
+# ════════════════════════════════════════════════════════════════════════════
+# HTML template — uses .format() so JS {{ }} work as literal braces
+# ════════════════════════════════════════════════════════════════════════════
+_HTML = """<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Seismograph — {book}</title>
+<script src="https://cdn.plot.ly/plotly-2.26.0.min.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Crimson+Text:ital@0;1&display=swap" rel="stylesheet">
+<style>
+*,*::before,*::after{{box-sizing:border-box;margin:0;padding:0}}
+body{{background:#0c0c14;color:#d8d8d8;font-family:Inter,sans-serif;font-size:14px;line-height:1.6}}
+/* header */
+.hdr{{background:linear-gradient(135deg,#111128,#18183a);border-bottom:1px solid #252545;padding:22px 40px 14px}}
+.hdr h1{{font-family:'Crimson Text',Georgia,serif;font-size:1.9rem;font-weight:400;color:#f2f2f2}}
+.hdr small{{color:#555;font-size:11px;display:block;margin-top:3px}}
+/* stats bar */
+.sb{{display:flex;gap:1px;background:#1a1a30;border-bottom:1px solid #252545}}
+.st{{flex:1;padding:16px 16px;background:#0c0c14;text-align:center}}
+.st b{{display:block;font-size:2rem;font-weight:700;line-height:1;color:#e63946}}
+.st b.B{{color:#4a9fd4}} .st b.G{{color:#e9c46a}} .st b.W{{color:#f2f2f2}}
+.st span{{font-size:10px;color:#454545;text-transform:uppercase;letter-spacing:1px;margin-top:4px;display:block}}
+/* tabs */
+.tabs{{display:flex;padding:0 40px;border-bottom:1px solid #252545;background:#0c0c14}}
+.tab{{padding:12px 22px;background:none;border:none;border-bottom:3px solid transparent;color:#484868;font-family:Inter,sans-serif;font-size:12px;font-weight:600;cursor:pointer;text-transform:uppercase;letter-spacing:.6px;transition:.2s}}
+.tab:hover{{color:#aaa}} .tab.on{{color:#e0e0e0;border-bottom-color:#e63946}}
+/* sections */
+.sec{{display:none;padding:28px 40px;min-height:80vh}} .sec.on{{display:block}}
+.stitle{{font-family:'Crimson Text',serif;font-size:1.35rem;color:#999;margin-bottom:18px}}
+/* chart wrapper */
+.cw{{background:#111120;border-radius:8px;padding:4px;margin-bottom:20px}}
+/* verse panel */
+.vp{{background:#111120;border:1px solid #252545;border-radius:8px;padding:20px 24px;min-height:120px;transition:.3s}}
+.vp .hint{{color:#2e2e4e;font-style:italic;text-align:center;padding:28px 0;font-size:13px}}
+.vp .vid{{font-size:10px;color:#454555;text-transform:uppercase;letter-spacing:2px;margin-bottom:9px}}
+.vp .vt{{font-family:'SBL Hebrew','David','Noto Sans Hebrew',Arial,serif;font-size:1.48rem;line-height:1.9;direction:rtl;text-align:right;color:#f2f2f2;margin-bottom:13px;border-right:3px solid #252545;padding-right:14px}}
+.vp.seam .vt{{border-right-color:#e63946}}
+.scores{{display:flex;gap:10px;flex-wrap:wrap}}
+.pill{{padding:4px 11px;border-radius:20px;font-size:11px;font-weight:600;font-family:monospace}}
+.pg{{background:rgba(230,57,70,.1);color:#e63946;border:1px solid rgba(230,57,70,.25)}}
+.pd{{background:rgba(74,159,212,.1);color:#4a9fd4;border:1px solid rgba(74,159,212,.25)}}
+.pc{{background:rgba(233,196,106,.1);color:#e9c46a;border:1px solid rgba(233,196,106,.25)}}
+.ps{{background:rgba(230,57,70,.18);color:#ff7070;border:1px solid rgba(200,40,40,.4)}}
+/* table */
+.note{{color:#454545;font-size:11px;margin-bottom:14px;font-style:italic}}
+table{{width:100%;border-collapse:collapse}}
+thead{{position:sticky;top:0;background:#0c0c14;z-index:5}}
+th{{padding:9px 14px;text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:1px;color:#404050;border-bottom:1px solid #252545}}
+td{{padding:8px 14px;border-bottom:1px solid #141425;vertical-align:middle}}
+tr:hover td{{background:#141425}} .sr td{{background:rgba(230,57,70,.04)}}
+.heb{{font-family:'SBL Hebrew','David','Noto Sans Hebrew',serif;font-size:1.05rem;direction:rtl;text-align:right;max-width:360px}}
+.n{{font-family:monospace;font-size:12px;text-align:right}}
+.n.hi{{color:#e63946;font-weight:700}} .cf{{color:#e9c46a}}
+.badge{{background:rgba(230,57,70,.18);color:#e63946;padding:3px 8px;border-radius:4px;font-size:9px;font-weight:700;letter-spacing:1px}}
+/* disclaimer */
+.disc{{margin-top:32px;padding:14px 16px;background:#07070f;border-left:3px solid #252545;border-radius:3px;font-size:11px;color:#383848;font-style:italic}}
+</style>
+</head>
+<body>
+
+<div class="hdr">
+  <h1>&#128300; Ensemble Fracture Seismograph &#8212; {book}</h1>
+  <small>GPT-Neo (causal LM) &middot; DictaBERT (masked LM PLL) &middot; Westminster Leningrad Codex</small>
+</div>
+
+<div class="sb">
+  <div class="st"><b class="W">{n_v}</b><span>Verses</span></div>
+  <div class="st"><b>{n_gpt}</b><span>GPT-Neo peaks</span></div>
+  <div class="st"><b class="B">{n_dicta}</b><span>DictaBERT peaks</span></div>
+  <div class="st"><b class="G">{n_shared}</b><span>Shared Seams</span></div>
+  <div class="st"><b class="W">{pearson_r:.2f}</b><span>Pearson r</span></div>
+  <div class="st"><b class="W">{spearman_rho:.2f}</b><span>Spearman &rho;</span></div>
+  <div class="st" style="flex:2; padding-top:16px;">
+    <label style="font-size:11px;color:#ccc;cursor:pointer;">
+      <input type="checkbox" id="mask-toggle" onclick="toggleMask(this)"> Show only non-consensus verses
+    </label>
+  </div>
+</div>
+
+<div class="tabs">
+  <button class="tab on" onclick="show('overview',this)">&#128202; Chapter Overview</button>
+  <button class="tab"    onclick="show('seismo',this)">&#128200;&#65039; Seismograph</button>
+  <button class="tab"    onclick="show('table',this)">&#128279; Fracture Table</button>
+</div>
+
+<!-- SECTION 1: Overview -->
+<div class="sec on" id="sec-overview">
+  <div class="stitle">Chapter-Level Fracture Profile</div>
+  <div class="cw" id="ch-chart"></div>
+  <div class="disc">&#9888; Results reflect stylistic signal as measured by modern Hebrew language models.
+  They do not constitute literary or historical dating. Shared Seams are the most empirically
+  robust findings &#8212; both models independently detected anomalous signal at the same verse.</div>
+</div>
+
+<!-- SECTION 2: Seismograph -->
+<div class="sec" id="sec-seismo">
+  <div class="stitle">Dual-Model Verse Seismograph
+    <span style="font-size:11px;color:#454555;font-family:Inter,sans-serif;"> &#8212; click any point to inspect verse</span>
+  </div>
+  <div class="cw" id="seismo-chart"></div>
+  <div class="vp" id="vp">
+    <div class="hint">Click any point on the seismograph to read the Hebrew verse and its scores.</div>
+  </div>
+</div>
+
+<!-- SECTION 3: Table -->
+<div class="sec" id="sec-table">
+  <div class="stitle">Fracture Table: Strict Shared Seams</div>
+  <p class="note">{note}</p>
+  <div style="overflow-x:auto; margin-bottom: 40px;">
+    <table>
+      <thead>
+        <tr>
+          <th>Verse</th><th style="text-align:right">Hebrew Text</th>
+          <th>Z GPT</th><th>Z Dicta</th><th>CFI</th><th>%Rank</th><th></th>
+        </tr>
+      </thead>
+      <tbody>{rows}</tbody>
+    </table>
+  </div>
+
+  <div class="stitle">Fracture Table: Composite Seams ({n_cfi})</div>
+  <p class="note">Verses that did not independently clear FDR on both models, but achieved global FDR significance through their Combined Fracture Index (CFI) vector magnitude.</p>
+  <div style="overflow-x:auto">
+    <table>
+      <thead>
+        <tr>
+          <th>Verse</th><th style="text-align:right">Hebrew Text</th>
+          <th>Z GPT</th><th>Z Dicta</th><th>CFI</th><th>%Rank</th><th></th>
+        </tr>
+      </thead>
+      <tbody>{cfi_rows}</tbody>
+    </table>
+  </div>
+</div>
+
+<script>
+const VERSES = {verses_js};
+const CHAPTERS = {chapter_js};
+const ZT = {z};
+window._isMasked = false;
+
+function toggleMask(chk) {{
+  window._isMasked = chk.checked;
+  const maskRanges = [[1,5], [24,27], [36,39], [40,55], [56,66]];
+  
+  function isConsensus(vid) {{
+    if (!vid) return false;
+    const ch = parseInt(vid.split('.')[1]);
+    for (let r of maskRanges) {{
+      if (ch >= r[0] && ch <= r[1]) return true;
+    }}
+    return false;
+  }}
+  
+  document.querySelectorAll('tbody tr').forEach(tr => {{
+    const vid = tr.cells[0].innerText;
+    if (isConsensus(vid)) {{
+      tr.style.display = window._isMasked ? 'none' : '';
+    }} else {{
+      tr.style.display = '';
+    }}
+  }});
+  
+  if(document.getElementById('sec-seismo').classList.contains('on')) renderSeismo();
+}}
+
+// ─── Tab switching ────────────────────────────────────────────────────────
+function show(name, btn) {{
+  document.querySelectorAll('.sec').forEach(s=>s.classList.remove('on'));
+  document.querySelectorAll('.tab').forEach(b=>b.classList.remove('on'));
+  document.getElementById('sec-'+name).classList.add('on');
+  btn.classList.add('on');
+  if (name==='seismo' && !window._sp) renderSeismo();
+}}
+
+// ─── Overview chart ───────────────────────────────────────────────────────
+(function() {{
+  const chs = CHAPTERS.map(r=>r.chapter);
+  const gv  = CHAPTERS.map(r=>+r.mean_gpt.toFixed(3));
+  const dv  = CHAPTERS.map(r=>+r.mean_dicta.toFixed(3));
+  const lay = {{
+    paper_bgcolor:'#111120', plot_bgcolor:'#111120',
+    font:{{family:'Inter,sans-serif',color:'#888',size:11}},
+    margin:{{l:50,r:20,t:40,b:80}}, height:380, barmode:'group', bargap:0.2,
+    xaxis:{{
+      title:'Chapter',color:'#444',gridcolor:'#1a1a30',tickfont:{{size:10}},
+      tickmode:'linear', dtick:1,
+      rangeslider:{{visible:true, bgcolor:'#0a0a12', thickness:0.06}},
+      range:[0.5, Math.min(20, chs.length)+0.5],
+    }},
+    yaxis:{{title:'Mean Z-Score',color:'#444',gridcolor:'#1a1a30',zeroline:true,zerolinecolor:'#2a2a40'}},
+    legend:{{bgcolor:'rgba(0,0,0,0)',x:1,xanchor:'right',y:1}},
+  }};
+  Plotly.newPlot('ch-chart', [
+    {{type:'bar',x:chs,y:gv,name:'GPT-Neo',
+      marker:{{color:'rgba(230,57,70,0.55)',line:{{width:0}}}}}},
+    {{type:'bar',x:chs,y:dv,name:'DictaBERT',
+      marker:{{color:'rgba(74,159,212,0.55)',line:{{width:0}}}}}},
+  ], lay, {{responsive:true,displayModeBar:true,
+    modeBarButtonsToKeep:['zoom2d','pan2d','resetScale2d']}});
+}})();
+
+// ─── Seismograph chart ────────────────────────────────────────────────────
+window._sp = false;
+function renderSeismo() {{
+  const isMasked = window._isMasked;
+  const maskRanges = [[1,5], [24,27], [36,39], [40,55], [56,66]];
+  function isConsensus(vid) {{
+    if (!vid) return false;
+    const ch = parseInt(vid.split('.')[1]);
+    for (let r of maskRanges) {{
+      if (ch >= r[0] && ch <= r[1]) return true;
+    }}
+    return false;
+  }}
+
+  const zg = VERSES.map(v => (isMasked && isConsensus(v.verse_id)) ? null : v.global_z_gpt);
+  const zd = VERSES.map(v => (isMasked && isConsensus(v.verse_id)) ? null : v.global_z_dicta);
+  const ids= VERSES.map(v=>v.verse_id);
+  const shX= VERSES.map((v,i)=>v.Strict_Shared_Seam && !(isMasked && isConsensus(v.verse_id)) ?i:null).filter(i=>i!==null);
+  const shY= shX.map(i=>VERSES[i].global_z_gpt);
+  
+  const cfiX = VERSES.map((v,i)=>v.Significant_CFI_Seam && !v.Strict_Shared_Seam && !(isMasked && isConsensus(v.verse_id)) ? i : null).filter(i=>i!==null);
+  const cfiY = cfiX.map(i=>VERSES[i].global_z_gpt);
+  
+  // Extract PELT boundaries
+  const peltX = VERSES.map((v,i)=>v.Is_Regime_Change && !(isMasked && isConsensus(v.verse_id)) ? i : null).filter(i=>i!==null);
+
+  const lay = {{
+    paper_bgcolor:'#111120', plot_bgcolor:'#111120',
+    font:{{family:'Inter,sans-serif',color:'#888',size:11}},
+    margin:{{l:50,r:20,t:20,b:80}}, height:380, hovermode:'closest',
+    dragmode: 'pan',
+    xaxis:{{
+      title:'Chapter', color:'#444', gridcolor:'#1a1a30',
+      tickvals:{tv}, ticktext:{tt}, tickangle:-50, tickfont:{{size:9}},
+      rangeslider:{{visible:true, bgcolor:'#0a0a12', thickness:0.05}},
+      range:[0, Math.min(150, {n_minus1})],
+    }},
+    yaxis:{{
+      title:'Z-Score', color:'#444', gridcolor:'#1a1a30',
+      zeroline:true, zerolinecolor:'#2a2a40',
+      fixedrange: true,
+    }},
+    shapes:[
+      {{type:'line',x0:0,x1:{n_minus1},y0:ZT,y1:ZT,
+        line:{{color:'rgba(244,162,97,0.35)',width:1,dash:'dash'}}}},
+      {{type:'line',x0:0,x1:{n_minus1},y0:-ZT,y1:-ZT,
+        line:{{color:'rgba(244,162,97,0.15)',width:1,dash:'dash'}}}},
+      ...peltX.map(x => ({{
+        type: 'line', x0: x, x1: x, y0: 0, y1: 1, yref: 'paper',
+        line: {{color: 'rgba(255, 255, 255, 0.15)', width: 2, dash: 'dot'}}
+      }}))
+    ],
+    legend:{{bgcolor:'rgba(0,0,0,0)',x:1,xanchor:'right',y:1}},
+  }};
+
+  const traces = [
+    {{type:'scatter',mode:'lines',y:zg,x:[...Array(zg.length).keys()],
+      name:'Z (GPT-Neo)',line:{{color:'#e63946',width:1.5}},
+      customdata:ids, hovertemplate:'<b>%{{customdata}}</b><br>Z-GPT: %{{y:.3f}}<extra></extra>'}},
+    {{type:'scatter',mode:'lines',y:zd,x:[...Array(zd.length).keys()],
+      name:'Z (DictaBERT)',line:{{color:'#4a9fd4',width:1.5}},
+      customdata:ids, hovertemplate:'<b>%{{customdata}}</b><br>Z-Dicta: %{{y:.3f}}<extra></extra>'}},
+  ];
+  if(cfiX.length) traces.push({{
+    type:'scatter',mode:'markers',x:cfiX,y:cfiY,name:'Composite Seam',
+    marker:{{color:'#e9c46a',size:7,symbol:'circle',line:{{width:1,color:'#111'}}}},
+    customdata:cfiX.map(i=>VERSES[i].verse_id),
+    hovertemplate:'<b>COMPOSITE SEAM</b><br>%{{customdata}}<extra></extra>',
+  }});
+  if(shX.length) traces.push({{
+    type:'scatter',mode:'markers',x:shX,y:shY,name:'Strict Shared Seam',
+    marker:{{color:'#d62828',size:11,symbol:'diamond',line:{{width:1.5,color:'white'}}}},
+    customdata:shX.map(i=>VERSES[i].verse_id),
+    hovertemplate:'<b>STRICT SHARED SEAM</b><br>%{{customdata}}<extra></extra>',
+  }});
+
+  const el = document.getElementById('seismo-chart');
+  Plotly.newPlot(el, traces, lay, {{responsive:true,displayModeBar:true,
+    modeBarButtonsToKeep:['zoom2d','pan2d','resetScale2d']}});
+
+  el.on('plotly_click', function(data) {{
+    const i = data.points[0].pointIndex;
+    const v = VERSES[i];
+    if(!v) return;
+    const vp = document.getElementById('vp');
+    vp.className = 'vp' + (v.Strict_Shared_Seam?' seam':'');
+    vp.innerHTML =
+      '<div class="vid">' + v.verse_id + ' &middot; REGIME ' + v.Regime_ID + '</div>' +
+      '<div class="vt">' + v.text + '</div>' +
+      '<div class="scores">' +
+        '<span class="pill pg">GPT Z: ' + v.global_z_gpt.toFixed(3) + '</span>' +
+        '<span class="pill pd">Dicta Z: ' + v.global_z_dicta.toFixed(3) + '</span>' +
+        '<span class="pill pc">CFI: ' + v.CFI_mag.toFixed(3) + '</span>' +
+        (v.Strict_Shared_Seam ? '<span class="pill ps">&#9889; STRICT SHARED SEAM</span>' : '') +
+        (v.Significant_CFI_Seam && !v.Strict_Shared_Seam ? '<span class="pill" style="background:rgba(233,196,106,0.18);color:#e9c46a;border:1px solid rgba(233,196,106,0.4)">&#9889; COMPOSITE SEAM</span>' : '') +
+        (v.Is_Regime_Change ? '<span style="color:#fff;font-size:11px;margin-left:8px;align-self:center;">&#9873; STARTS NEW REGIME</span>' : '') +
+      '</div>';
+  }});
+  window._sp = true;
+}}
+</script>
+</body>
+</html>
+"""
