@@ -1,11 +1,11 @@
-# Neural Seismography
+# Textual Seismography
 
 **Detecting redactional seams in the Book of Isaiah with dual-model transformer perplexity**
 
 Agnieszka Blanka Ziemińska · Pontifical University of John Paul II, Kraków · Centre for Digital Humanities, IBL PAN, Warsaw
-Presented at **EADH 2026**, Kraków.
+Presented at **EADH 2026**, Kraków, under the paper title *Neural Seismography*.
 
-**→ [Interactive seismograph for Isaiah](https://agnieszkachr.github.io/neural-seismography/)**
+**→ [Interactive seismograph for Isaiah](https://agnieszkachr.github.io/textual-seismography/)**
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
 [![Code: MIT](https://img.shields.io/badge/code-MIT-yellow.svg)](LICENSE)
@@ -88,8 +88,8 @@ reference; only the Isaiah page has been rebuilt on the February metric.
 ## Reproducing
 
 ```bash
-git clone https://github.com/Agnieszkachr/neural-seismography.git
-cd neural-seismography
+git clone https://github.com/Agnieszkachr/textual-seismography.git
+cd textual-seismography
 pip install -r requirements.txt
 python run_analysis.py
 ```

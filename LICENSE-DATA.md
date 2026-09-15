@@ -10,9 +10,9 @@ https://creativecommons.org/licenses/by/4.0/
 You may share and adapt this material for any purpose, including commercially,
 provided you give appropriate credit. Suggested attribution:
 
-> Ziemińska, Agnieszka Blanka (2026). *Neural Seismography: detecting redactional
+> Ziemińska, Agnieszka Blanka (2026). *Textual Seismography: detecting redactional
 > seams in the Book of Isaiah with dual-model transformer perplexity.* Data and
-> results. https://github.com/Agnieszkachr/neural-seismography
+> results. https://github.com/Agnieszkachr/textual-seismography
 
 ## Third-party material
 
