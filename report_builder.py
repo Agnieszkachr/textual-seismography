@@ -8,10 +8,68 @@ Sections:
 """
 
 import json
+import os
+import re
+
 import pandas as pd
 
+# Version of plotly.js the template was written against.
+PLOTLY_CDN_VERSION = "2.26.0"
+_PLOTLY_CDN_TAG = (
+    f'<script src="https://cdn.plot.ly/plotly-{PLOTLY_CDN_VERSION}.min.js"></script>'
+)
 
-def build_report_html(df: pd.DataFrame, book_name: str, z_threshold: float = 2.0, pearson_r: float = 0.0, spearman_rho: float = 0.0) -> str:
+
+def _plotly_script(offline: bool = False, plotly_js_path: str | None = None) -> str:
+    """Return the <script> element that provides plotly.js.
+
+    offline=False (default) links the CDN build: small file, needs a network
+    connection to open.
+
+    offline=True embeds the library in the page, so the report opens from a USB
+    stick or an air-gapped machine. The source is taken from *plotly_js_path* if
+    given, otherwise from the installed plotly package (plotly.offline.get_plotlyjs).
+    Adds roughly 3.6 MB to the report. Falls back to the CDN, with a warning, if
+    the library cannot be located.
+    """
+    if not offline:
+        return _PLOTLY_CDN_TAG
+
+    src = None
+    if plotly_js_path:
+        if not os.path.isfile(plotly_js_path):
+            print(f"[report_builder] plotly_js_path not found: {plotly_js_path}")
+        else:
+            src = open(plotly_js_path, encoding="utf-8").read()
+            origin = plotly_js_path
+    if src is None:
+        try:
+            from plotly.offline import get_plotlyjs
+            src = get_plotlyjs()
+            origin = "installed plotly package"
+        except Exception as exc:                      # pragma: no cover
+            print(f"[report_builder] could not embed plotly.js ({exc}); using the CDN instead.")
+            return _PLOTLY_CDN_TAG
+
+    # A literal </script> anywhere in the source would close the tag early.
+    src = src.replace("</script", r"<\/script")
+
+    found = re.search(r"plotly\.js v(\d+)\.(\d+)\.(\d+)", src[:400])
+    version = ".".join(found.groups()) if found else "unknown"
+    if found and found.group(1) != PLOTLY_CDN_VERSION.split(".")[0]:
+        print(f"[report_builder] WARNING: embedding plotly.js {version}, but this "
+              f"template was written for {PLOTLY_CDN_VERSION}. Check the charts render.")
+    print(f"[report_builder] Embedding plotly.js {version} from {origin} "
+          f"({len(src) / 1e6:.1f} MB).")
+
+    return ("<!-- plotly.js bundled for offline use — "
+            "Copyright 2012-2023 Plotly, Inc., MIT licence -->\n"
+            "<script>\n" + src + "\n</script>")
+
+
+def build_report_html(df: pd.DataFrame, book_name: str, z_threshold: float = 2.0,
+                      pearson_r: float = 0.0, spearman_rho: float = 0.0,
+                      offline: bool = False, plotly_js_path: str | None = None) -> str:
     """Return a self-contained HTML string."""
 
     # ── Chapter aggregates ──────────────────────────────────────────────
@@ -113,6 +171,7 @@ def build_report_html(df: pd.DataFrame, book_name: str, z_threshold: float = 2.0
         n_minus1=n_v - 1,
         pearson_r=pearson_r,
         spearman_rho=spearman_rho,
+        plotly_script=_plotly_script(offline, plotly_js_path),
     )
 
 
@@ -125,7 +184,7 @@ _HTML = """<!DOCTYPE html>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Seismograph — {book}</title>
-<script src="https://cdn.plot.ly/plotly-2.26.0.min.js"></script>
+{plotly_script}
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Crimson+Text:ital@0;1&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{{box-sizing:border-box;margin:0;padding:0}}

@@ -332,6 +332,10 @@ def main():
     parser.add_argument("--alpha", type=float, default=2.0, help="Lexical discounting coefficient (default 2.0)")
     parser.add_argument("--min-size", type=int, default=30, help="PELT minimum segment length in verses (default 30)")
     parser.add_argument("--penalty-multiplier", type=float, default=1.43, help="PELT cost penalty multiplier (default 1.43)")
+    parser.add_argument("--offline", action="store_true",
+                        help="Embed plotly.js in the report instead of linking the CDN, so the dashboard opens without a network connection (adds ~3.6 MB).")
+    parser.add_argument("--plotly-js", default=None, metavar="PATH",
+                        help="Use this plotly.min.js for --offline instead of the copy bundled with the installed plotly package.")
     parser.add_argument("--controls", action="store_true", help="Run the pipeline on a predefined set of control books (no output html, just stats).")
     
     args = parser.parse_args()
@@ -390,7 +394,9 @@ def main():
     report_title = " + ".join(args.book)
     if args.limit:
         report_title += f" (first {args.limit} verses)"
-    html_str = build_report_html(df, report_title, z_threshold=2.0, pearson_r=res["pearson_r"], spearman_rho=res["spearman_rho"])
+    html_str = build_report_html(df, report_title, z_threshold=2.0,
+                                 pearson_r=res["pearson_r"], spearman_rho=res["spearman_rho"],
+                                 offline=args.offline, plotly_js_path=args.plotly_js)
     with open(html_out, "w", encoding="utf-8") as f:
         f.write(html_str)
     print(f"[Output] Generated Interactive Dashboard at {html_out}")

@@ -104,6 +104,28 @@ that Z-scores and FDR-corrected p-values stay identical across future ecosystem 
 - GPT-Neo `d9ee75ea9eb03f817c5c97a4e4d7b2e300be365b`
 - DictaBERT `8884c6db002aba4002ee638fe4070c92e9ffbbf1`
 
+### Offline reports
+
+By default the generated dashboard links plotly.js from a CDN, which keeps the file small but means
+it draws no charts without a network connection. Pass `--offline` to embed the library instead:
+
+```bash
+python run_analysis.py --book Isaiah --offline
+```
+
+The report grows from about 440 KB to about 4 MB and then opens from a USB stick or an air-gapped
+machine. The library is taken from the installed `plotly` package; `requirements.txt` pins
+plotly 5.17.0 because it bundles plotly.js 2.26.0, the version this template targets. To use a
+different copy, point at it explicitly:
+
+```bash
+python run_analysis.py --book Isaiah --offline --plotly-js path/to/plotly.min.js
+```
+
+If the library cannot be found the report falls back to the CDN and says so, rather than producing
+a page with no charts. Embedding a major version other than 2.x prints a warning, since the chart
+code was written against 2.26.0.
+
 Scoring 1,291 verses takes roughly an hour on CPU and a few minutes on a GPU. The engines detect
 CUDA automatically.
 
