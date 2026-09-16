@@ -17,7 +17,6 @@ def diagnostic_4(lev_df, isa_df):
     lev_cfi = lev_df['CFI_mag'].values
     
     # Use ddof=1 for sample std to match typical expectations, or 0 if population.
-    # The user asked for np.std() which defaults to ddof=0, let's use default.
     print(f"Isaiah    CFI: mean={np.mean(isa_cfi):.3f}, std={np.std(isa_cfi):.3f}, max={np.max(isa_cfi):.3f}, median={np.median(isa_cfi):.3f}")
     print(f"Leviticus CFI: mean={np.mean(lev_cfi):.3f}, std={np.std(lev_cfi):.3f}, max={np.max(lev_cfi):.3f}, median={np.median(lev_cfi):.3f}")
     print()

@@ -107,7 +107,7 @@ def build_report_html(df: pd.DataFrame, book_name: str, z_threshold: float = 2.0
 
     rows_html = ""
     for _, r in seams.iterrows():
-        badge = "<span class='badge'>SHARED</span>" if r["Strict_Shared_Seam"] else ""
+        badge = "<span class='badge'>Shared</span>" if r["Strict_Shared_Seam"] else ""
         gc = " hi" if r["global_z_gpt"]   >= z_threshold else ""
         dc = " hi" if r["global_z_dicta"] >= z_threshold else ""
         rows_html += (
@@ -135,7 +135,7 @@ def build_report_html(df: pd.DataFrame, book_name: str, z_threshold: float = 2.0
             f"<td class='n{dc}'>{r['global_z_dicta']:.3f}</td>"
             f"<td class='n cf'>{r['CFI_mag']:.3f}</td>"
             f"<td class='n'>{r.get('cfi_percentile', 0.0):.1f}</td>"
-            f"<td><span class='badge' style='background:rgba(233,196,106,0.18);color:#e9c46a;'>COMPOSITE</span></td></tr>\n"
+            f"<td><span class='badge' style='background:rgba(141,169,126,0.18);color:#8da97e;'>Composite</span></td></tr>\n"
         )
 
     # ── Chapter X-axis ticks ─────────────────────────────────────────────
@@ -188,51 +188,51 @@ _HTML = """<!DOCTYPE html>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Crimson+Text:ital@0;1&display=swap" rel="stylesheet">
 <style>
 *,*::before,*::after{{box-sizing:border-box;margin:0;padding:0}}
-body{{background:#0c0c14;color:#d8d8d8;font-family:Inter,sans-serif;font-size:14px;line-height:1.6}}
+body{{background:#141110;color:#e7e0d9;font-family:Inter,sans-serif;font-size:14px;line-height:1.6}}
 /* header */
-.hdr{{background:linear-gradient(135deg,#111128,#18183a);border-bottom:1px solid #252545;padding:22px 40px 14px}}
-.hdr h1{{font-family:'Crimson Text',Georgia,serif;font-size:1.9rem;font-weight:400;color:#f2f2f2}}
+.hdr{{background:linear-gradient(135deg,#211e1d,#2e2927);border-bottom:1px solid #3a322f;padding:22px 40px 14px}}
+.hdr h1{{font-family:'Crimson Text',Georgia,serif;font-size:1.9rem;font-weight:400;color:#f6f1ec}}
 .hdr small{{color:#555;font-size:11px;display:block;margin-top:3px}}
 /* stats bar */
-.sb{{display:flex;gap:1px;background:#1a1a30;border-bottom:1px solid #252545}}
-.st{{flex:1;padding:16px 16px;background:#0c0c14;text-align:center}}
-.st b{{display:block;font-size:2rem;font-weight:700;line-height:1;color:#e63946}}
-.st b.B{{color:#4a9fd4}} .st b.G{{color:#e9c46a}} .st b.W{{color:#f2f2f2}}
-.st span{{font-size:10px;color:#454545;text-transform:uppercase;letter-spacing:1px;margin-top:4px;display:block}}
+.sb{{display:flex;gap:1px;background:#2e2725;border-bottom:1px solid #3a322f}}
+.st{{flex:1;padding:16px 16px;background:#141110;text-align:center}}
+.st b{{display:block;font-size:2rem;font-weight:700;line-height:1;color:#f0574f}}
+.st b.B{{color:#dfa13c}} .st b.G{{color:#8da97e}} .st b.W{{color:#f6f1ec}}
+.st span{{font-size:10px;color:#9a8f86;letter-spacing:0;margin-top:5px;display:block}}
 /* tabs */
-.tabs{{display:flex;padding:0 40px;border-bottom:1px solid #252545;background:#0c0c14}}
-.tab{{padding:12px 22px;background:none;border:none;border-bottom:3px solid transparent;color:#484868;font-family:Inter,sans-serif;font-size:12px;font-weight:600;cursor:pointer;text-transform:uppercase;letter-spacing:.6px;transition:.2s}}
-.tab:hover{{color:#aaa}} .tab.on{{color:#e0e0e0;border-bottom-color:#e63946}}
+.tabs{{display:flex;padding:0 40px;border-bottom:1px solid #3a322f;background:#141110}}
+.tab{{padding:12px 22px;background:none;border:none;border-bottom:3px solid transparent;color:#8a7f76;font-family:Inter,sans-serif;font-size:12px;font-weight:600;cursor:pointer;letter-spacing:0;transition:.2s}}
+.tab:hover{{color:#f2ece6}} .tab.on{{color:#f2ece6;border-bottom-color:#f0574f}}
 /* sections */
 .sec{{display:none;padding:28px 40px;min-height:80vh}} .sec.on{{display:block}}
 .stitle{{font-family:'Crimson Text',serif;font-size:1.35rem;color:#999;margin-bottom:18px}}
 /* chart wrapper */
-.cw{{background:#111120;border-radius:8px;padding:4px;margin-bottom:20px}}
+.cw{{background:#1e1a19;border-radius:8px;padding:4px;margin-bottom:20px}}
 /* verse panel */
-.vp{{background:#111120;border:1px solid #252545;border-radius:8px;padding:20px 24px;min-height:120px;transition:.3s}}
-.vp .hint{{color:#2e2e4e;font-style:italic;text-align:center;padding:28px 0;font-size:13px}}
-.vp .vid{{font-size:10px;color:#454555;text-transform:uppercase;letter-spacing:2px;margin-bottom:9px}}
-.vp .vt{{font-family:'SBL Hebrew','David','Noto Sans Hebrew',Arial,serif;font-size:1.48rem;line-height:1.9;direction:rtl;text-align:right;color:#f2f2f2;margin-bottom:13px;border-right:3px solid #252545;padding-right:14px}}
-.vp.seam .vt{{border-right-color:#e63946}}
+.vp{{background:#1e1a19;border:1px solid #3a322f;border-radius:8px;padding:20px 24px;min-height:120px;transition:.3s}}
+.vp .hint{{color:#6b615a;font-style:italic;text-align:center;padding:28px 0;font-size:13px}}
+.vp .vid{{font-size:10px;color:#8a7f76;letter-spacing:0;font-weight:600;margin-bottom:9px}}
+.vp .vt{{font-family:'SBL Hebrew','David','Noto Sans Hebrew',Arial,serif;font-size:1.48rem;line-height:1.9;direction:rtl;text-align:right;color:#f6f1ec;margin-bottom:13px;border-right:3px solid #3a322f;padding-right:14px}}
+.vp.seam .vt{{border-right-color:#f0574f}}
 .scores{{display:flex;gap:10px;flex-wrap:wrap}}
 .pill{{padding:4px 11px;border-radius:20px;font-size:11px;font-weight:600;font-family:monospace}}
-.pg{{background:rgba(230,57,70,.1);color:#e63946;border:1px solid rgba(230,57,70,.25)}}
-.pd{{background:rgba(74,159,212,.1);color:#4a9fd4;border:1px solid rgba(74,159,212,.25)}}
-.pc{{background:rgba(233,196,106,.1);color:#e9c46a;border:1px solid rgba(233,196,106,.25)}}
-.ps{{background:rgba(230,57,70,.18);color:#ff7070;border:1px solid rgba(200,40,40,.4)}}
+.pg{{background:rgba(240,87,79,.1);color:#f0574f;border:1px solid rgba(240,87,79,.25)}}
+.pd{{background:rgba(223,161,60,.1);color:#dfa13c;border:1px solid rgba(223,161,60,.25)}}
+.pc{{background:rgba(141,169,126,.1);color:#8da97e;border:1px solid rgba(141,169,126,.25)}}
+.ps{{background:rgba(240,87,79,.18);color:#f79b90;border:1px solid rgba(200,66,58,.4)}}
 /* table */
-.note{{color:#454545;font-size:11px;margin-bottom:14px;font-style:italic}}
+.note{{color:#9a8f86;font-size:11px;margin-bottom:14px;font-style:italic}}
 table{{width:100%;border-collapse:collapse}}
-thead{{position:sticky;top:0;background:#0c0c14;z-index:5}}
-th{{padding:9px 14px;text-align:left;font-size:10px;text-transform:uppercase;letter-spacing:1px;color:#404050;border-bottom:1px solid #252545}}
-td{{padding:8px 14px;border-bottom:1px solid #141425;vertical-align:middle}}
-tr:hover td{{background:#141425}} .sr td{{background:rgba(230,57,70,.04)}}
+thead{{position:sticky;top:0;background:#141110;z-index:5}}
+th{{padding:9px 14px;text-align:left;font-size:11.5px;font-weight:600;letter-spacing:0;color:#9a8f86;border-bottom:1px solid #3a322f}}
+td{{padding:8px 14px;border-bottom:1px solid #272220;vertical-align:middle}}
+tr:hover td{{background:#272220}} .sr td{{background:rgba(240,87,79,.04)}}
 .heb{{font-family:'SBL Hebrew','David','Noto Sans Hebrew',serif;font-size:1.05rem;direction:rtl;text-align:right;max-width:360px}}
 .n{{font-family:monospace;font-size:12px;text-align:right}}
-.n.hi{{color:#e63946;font-weight:700}} .cf{{color:#e9c46a}}
-.badge{{background:rgba(230,57,70,.18);color:#e63946;padding:3px 8px;border-radius:4px;font-size:9px;font-weight:700;letter-spacing:1px}}
+.n.hi{{color:#f0574f;font-weight:700}} .cf{{color:#8da97e}}
+.badge{{background:rgba(240,87,79,.18);color:#f0574f;padding:3px 8px;border-radius:4px;font-size:10.5px;font-weight:700;letter-spacing:0}}
 /* disclaimer */
-.disc{{margin-top:32px;padding:14px 16px;background:#07070f;border-left:3px solid #252545;border-radius:3px;font-size:11px;color:#383848;font-style:italic}}
+.disc{{margin-top:32px;padding:14px 16px;background:#0e0b0a;border-left:3px solid #3a322f;border-radius:3px;font-size:11px;color:#6b615a;font-style:italic}}
 </style>
 </head>
 <body>
@@ -274,7 +274,7 @@ tr:hover td{{background:#141425}} .sr td{{background:rgba(230,57,70,.04)}}
 <!-- SECTION 2: Seismograph -->
 <div class="sec" id="sec-seismo">
   <div class="stitle">Dual-Model Verse Seismograph
-    <span style="font-size:11px;color:#454555;font-family:Inter,sans-serif;"> &#8212; click any point to inspect verse</span>
+    <span style="font-size:11px;color:#8a7f76;font-family:Inter,sans-serif;"> &#8212; click any point to inspect verse</span>
   </div>
   <div class="cw" id="seismo-chart"></div>
   <div class="vp" id="vp">
@@ -359,23 +359,23 @@ function show(name, btn) {{
   const gv  = CHAPTERS.map(r=>+r.mean_gpt.toFixed(3));
   const dv  = CHAPTERS.map(r=>+r.mean_dicta.toFixed(3));
   const lay = {{
-    paper_bgcolor:'#111120', plot_bgcolor:'#111120',
+    paper_bgcolor:'#1e1a19', plot_bgcolor:'#1e1a19',
     font:{{family:'Inter,sans-serif',color:'#888',size:11}},
     margin:{{l:50,r:20,t:40,b:80}}, height:380, barmode:'group', bargap:0.2,
     xaxis:{{
-      title:'Chapter',color:'#444',gridcolor:'#1a1a30',tickfont:{{size:10}},
+      title:'Chapter',color:'#8a7f76',gridcolor:'#2e2725',tickfont:{{size:10}},
       tickmode:'linear', dtick:1,
-      rangeslider:{{visible:true, bgcolor:'#0a0a12', thickness:0.06}},
+      rangeslider:{{visible:true, bgcolor:'#0e0b0a', thickness:0.06}},
       range:[0.5, Math.min(20, chs.length)+0.5],
     }},
-    yaxis:{{title:'Mean Z-Score',color:'#444',gridcolor:'#1a1a30',zeroline:true,zerolinecolor:'#2a2a40'}},
+    yaxis:{{title:'Mean Z-Score',color:'#8a7f76',gridcolor:'#2e2725',zeroline:true,zerolinecolor:'#4a423e'}},
     legend:{{bgcolor:'rgba(0,0,0,0)',x:1,xanchor:'right',y:1}},
   }};
   Plotly.newPlot('ch-chart', [
     {{type:'bar',x:chs,y:gv,name:'GPT-Neo',
-      marker:{{color:'rgba(230,57,70,0.55)',line:{{width:0}}}}}},
+      marker:{{color:'rgba(240,87,79,0.55)',line:{{width:0}}}}}},
     {{type:'bar',x:chs,y:dv,name:'DictaBERT',
-      marker:{{color:'rgba(74,159,212,0.55)',line:{{width:0}}}}}},
+      marker:{{color:'rgba(223,161,60,0.55)',line:{{width:0}}}}}},
   ], lay, {{responsive:true,displayModeBar:true,
     modeBarButtonsToKeep:['zoom2d','pan2d','resetScale2d']}});
 }})();
@@ -407,19 +407,19 @@ function renderSeismo() {{
   const peltX = VERSES.map((v,i)=>v.Is_Regime_Change && !(isMasked && isConsensus(v.verse_id)) ? i : null).filter(i=>i!==null);
 
   const lay = {{
-    paper_bgcolor:'#111120', plot_bgcolor:'#111120',
+    paper_bgcolor:'#1e1a19', plot_bgcolor:'#1e1a19',
     font:{{family:'Inter,sans-serif',color:'#888',size:11}},
     margin:{{l:50,r:20,t:20,b:80}}, height:380, hovermode:'closest',
     dragmode: 'pan',
     xaxis:{{
-      title:'Chapter', color:'#444', gridcolor:'#1a1a30',
+      title:'Chapter', color:'#8a7f76', gridcolor:'#2e2725',
       tickvals:{tv}, ticktext:{tt}, tickangle:-50, tickfont:{{size:9}},
-      rangeslider:{{visible:true, bgcolor:'#0a0a12', thickness:0.05}},
+      rangeslider:{{visible:true, bgcolor:'#0e0b0a', thickness:0.05}},
       range:[0, Math.min(150, {n_minus1})],
     }},
     yaxis:{{
-      title:'Z-Score', color:'#444', gridcolor:'#1a1a30',
-      zeroline:true, zerolinecolor:'#2a2a40',
+      title:'Z-Score', color:'#8a7f76', gridcolor:'#2e2725',
+      zeroline:true, zerolinecolor:'#4a423e',
       fixedrange: true,
     }},
     shapes:[
@@ -437,17 +437,17 @@ function renderSeismo() {{
 
   const traces = [
     {{type:'scatter',mode:'lines',y:zg,x:[...Array(zg.length).keys()],
-      name:'Z (GPT-Neo)',line:{{color:'#e63946',width:1.5}},
+      name:'Z (GPT-Neo)',line:{{color:'#f0574f',width:1.5}},
       customdata:ids, hovertemplate:'<b>%{{customdata}}</b><br>Z-GPT: %{{y:.3f}}<extra></extra>'}},
     {{type:'scatter',mode:'lines',y:zd,x:[...Array(zd.length).keys()],
-      name:'Z (DictaBERT)',line:{{color:'#4a9fd4',width:1.5}},
+      name:'Z (DictaBERT)',line:{{color:'#dfa13c',width:1.5}},
       customdata:ids, hovertemplate:'<b>%{{customdata}}</b><br>Z-Dicta: %{{y:.3f}}<extra></extra>'}},
   ];
   if(cfiX.length) traces.push({{
     type:'scatter',mode:'markers',x:cfiX,y:cfiY,name:'Composite Seam',
-    marker:{{color:'#e9c46a',size:7,symbol:'circle',line:{{width:1,color:'#111'}}}},
+    marker:{{color:'#8da97e',size:7,symbol:'circle',line:{{width:1,color:'#111'}}}},
     customdata:cfiX.map(i=>VERSES[i].verse_id),
-    hovertemplate:'<b>COMPOSITE SEAM</b><br>%{{customdata}}<extra></extra>',
+    hovertemplate:'<b>Composite seam</b><br>%{{customdata}}<extra></extra>',
   }});
   if(shX.length) traces.push({{
     type:'scatter',mode:'markers',x:shX,y:shY,name:'Strict Shared Seam',
@@ -474,7 +474,7 @@ function renderSeismo() {{
         '<span class="pill pd">Dicta Z: ' + v.global_z_dicta.toFixed(3) + '</span>' +
         '<span class="pill pc">CFI: ' + v.CFI_mag.toFixed(3) + '</span>' +
         (v.Strict_Shared_Seam ? '<span class="pill ps">&#9889; STRICT SHARED SEAM</span>' : '') +
-        (v.Significant_CFI_Seam && !v.Strict_Shared_Seam ? '<span class="pill" style="background:rgba(233,196,106,0.18);color:#e9c46a;border:1px solid rgba(233,196,106,0.4)">&#9889; COMPOSITE SEAM</span>' : '') +
+        (v.Significant_CFI_Seam && !v.Strict_Shared_Seam ? '<span class="pill" style="background:rgba(141,169,126,0.18);color:#8da97e;border:1px solid rgba(141,169,126,0.4)">&#9889; Composite seam</span>' : '') +
         (v.Is_Regime_Change ? '<span style="color:#fff;font-size:11px;margin-left:8px;align-self:center;">&#9873; STARTS NEW REGIME</span>' : '') +
       '</div>';
   }});

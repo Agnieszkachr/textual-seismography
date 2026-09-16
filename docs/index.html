@@ -7,43 +7,42 @@
 <meta name="description" content="Detecting redactional seams in the Book of Isaiah with dual-model transformer perplexity. EADH 2026.">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--navy:#10233F;--navy2:#16305A;--red:#C1272D;--redlt:#FA4E52;
-      --green:#1E6F45;--slate:#4B5566;--mute:#8895A8;--line:#D9E1EC;--card:#F4F6FA}
-body{background:#fff;color:var(--slate);font:16px/1.65 Cambria,Georgia,serif;-webkit-text-size-adjust:100%}
-h1,h2,h3,.sans{font-family:Arial,Helvetica,sans-serif}
+:root{--ink:#211E1D;--ink2:#3A322F;--red:#C1272D;--redlt:#F0574F;
+      --green:#5E6B3C;--slate:#4A4340;--mute:#8C837C;--line:#DDD8D2;--card:#F1EEEA}
+body{background:#FBFAF8;color:var(--slate);font:16px/1.65 Arial,Helvetica,"Segoe UI",sans-serif;-webkit-text-size-adjust:100%}
+h1,h2,h3,.sans{font-family:Cambria,Georgia,"Times New Roman",serif}
 .wrap{max-width:960px;margin:0 auto;padding-inline:20px}
-header{background:var(--navy);color:#fff;padding-block:52px 44px}
-header .eyebrow{font-size:12px;font-weight:700;letter-spacing:4px;color:var(--redlt);text-transform:uppercase}
+header{background:var(--ink);color:#fff;padding-block:52px 44px}
+header .eyebrow{font-size:13px;font-weight:700;letter-spacing:0;color:var(--redlt)}
 header h1{font-size:clamp(28px,5vw,44px);line-height:1.15;font-weight:700;margin:14px 0 10px}
-header p.sub{font-size:clamp(15px,2.4vw,19px);color:#C9D6E5;max-width:44ch}
+header p.sub{font-size:clamp(15px,2.4vw,19px);color:#E3DCD4;max-width:44ch}
 header .who{margin-top:26px;font-size:14px;color:#fff}
-header .aff{font-size:12.5px;color:#9FB2C8;line-height:1.75}
+header .aff{font-size:12.5px;color:#B5ABA2;line-height:1.75}
 main section{padding-block:40px;border-bottom:1px solid var(--line)}
 main section:last-of-type{border-bottom:none}
-h2{font-size:13px;font-weight:700;letter-spacing:2.4px;text-transform:uppercase;color:var(--red);margin-bottom:16px}
-h3{font-size:18px;font-weight:700;color:var(--navy);margin-bottom:6px}
+h2{font-size:20px;font-weight:700;letter-spacing:0;color:var(--red);margin-bottom:16px}
+h3{font-size:18px;font-weight:700;color:var(--ink);margin-bottom:6px}
 p{margin-bottom:14px;max-width:72ch}
 p:last-child{margin-bottom:0}
 .lead{font-size:18px}
 .stats{display:flex;flex-wrap:wrap;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:8px;overflow:hidden;margin-block:8px 24px}
-.stat{flex:1 1 130px;background:#fff;padding:18px 16px;text-align:center}
-.stat b{display:block;font-family:Arial,Helvetica,sans-serif;font-size:30px;line-height:1;color:var(--navy)}
+.stat{flex:1 1 130px;background:#FBFAF8;padding:18px 16px;text-align:center}
+.stat b{display:block;font-family:Cambria,Georgia,serif;font-size:32px;line-height:1;color:var(--ink)}
 .stat b.r{color:var(--red)} .stat b.g{color:var(--green)}
-.stat span{display:block;margin-top:6px;font-size:11px;letter-spacing:1.1px;text-transform:uppercase;color:var(--mute)}
+.stat span{display:block;margin-top:6px;font-size:12px;letter-spacing:0;color:var(--mute)}
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
-.btn{display:inline-block;padding:13px 22px;border-radius:7px;font-family:Arial,Helvetica,sans-serif;
-     font-size:14px;font-weight:700;text-decoration:none;border:1px solid var(--navy)}
+.btn{display:inline-block;padding:13px 22px;border-radius:7px;
+     font-size:14.5px;font-weight:700;text-decoration:none;border:1px solid var(--ink)}
 .btn.primary{background:var(--red);border-color:var(--red);color:#fff}
 .btn.primary:hover{background:#A81F25}
-.btn.ghost{color:var(--navy);background:#fff}
+.btn.ghost{color:var(--ink);background:#FBFAF8}
 .btn.ghost:hover{background:var(--card)}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
 .card{background:var(--card);border-radius:8px;padding:20px 22px}
-.card .tag{font-family:Arial,Helvetica,sans-serif;font-size:11px;font-weight:700;letter-spacing:1.6px;
-           text-transform:uppercase;color:var(--green);margin-bottom:8px}
+.card .tag{font-size:12px;font-weight:700;letter-spacing:0;color:var(--green);margin-bottom:8px}
 .card p{font-size:14.5px}
-.rule{background:var(--navy);color:#DDE5EF;border-radius:8px;padding:22px 24px;margin-top:20px}
-.rule b{color:#fff;font-family:Arial,Helvetica,sans-serif}
+.rule{background:var(--ink);color:#E3DCD4;border-radius:8px;padding:22px 24px;margin-top:20px}
+.rule b{color:#fff;font-family:Cambria,Georgia,serif}
 .note{background:var(--card);border-left:3px solid var(--green);border-radius:4px;padding:16px 18px;font-size:14.5px}
 code{font-family:Consolas,"Courier New",monospace;font-size:13.5px;background:var(--card);padding:1px 5px;border-radius:3px}
 a{color:var(--red)} a:hover{color:#8E1D22}
