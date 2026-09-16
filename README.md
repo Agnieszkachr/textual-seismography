@@ -113,6 +113,36 @@ concentrated in the liturgically prominent chapters. Uniform memorisation would 
 baseline; uneven memorisation does not. One model does not know the language; the other knows the
 answers. That argues for triangulating across models rather than substituting one for another.
 
+## Does the agreement beat chance?
+
+The two-witness rule only means something if the two models agree more often than they would by
+accident. `validate_agreement.py` measures that directly, against three nulls:
+
+```bash
+python validate_agreement.py --metric output/isaiah_abstract_metric.csv \
+    --extra output/isaiah_berel_control.csv:z_berel --json output/isaiah_validation.json
+```
+
+| masked model | shared seams | chance, rotation | chance, length-matched | p |
+|---|---|---|---|---|
+| DictaBERT | 22 | 7.5 | 10.2 | < 5 × 10⁻⁵ |
+| BEREL 3.0 | 23 | 8.9 | 11.0 | 1.5 × 10⁻⁴ |
+
+*rotation* circularly shifts one model's series against the other, which keeps the autocorrelation the
+rolling window induces and breaks only the pairing. *length-matched* permutes within verse-length
+deciles, so the length-to-score relationship survives in the null and cannot account for any excess.
+Neither null reached the observed count in 20,000 draws for DictaBERT; three draws in 20,000 did for
+BEREL.
+
+The confound is real but partial. Score and verse length correlate at rho = −0.20 (GPT-Neo) and −0.24
+(DictaBERT), and the shared seams average 10.0 words against 12.6 elsewhere (Mann-Whitney p = 0.003).
+Controlling for it raises the chance rate from 7.5 to 10.2 and leaves the excess standing.
+
+This tests one thing only: that the agreement is not accidental. It does not establish that what the
+two models agree about is redaction. A planted-seam experiment — splicing foreign passages into
+homogeneous books at known positions and asking whether the detector recovers them — would test that,
+and has not been run.
+
 ## Reproducing
 
 ```bash
@@ -181,7 +211,7 @@ may be detecting the history of the language rather than the work of an editor. 
 training, the two-model rule does not cover this bias: it guards against architectural bias, not against
 one the models hold in common. The rolling local baseline is the mitigation, since the question is never
 *how modern is this verse* but *how surprising is this verse, here*, and a uniform register mismatch is a
-constant that a local Z-score cancels. See the robustness check below for how far that holds.
+constant that a local Z-score cancels. See the robustness check above for how far that holds, and the permutation tests for whether the two models agree more than chance.
 The causal model reads the canonical order, which is itself the last editor's
 achievement, so what is measured is how well the final redactor smoothed his joins — not when his
 sources were written. **The instrument dates nothing.** It locates boundaries in the text as we now

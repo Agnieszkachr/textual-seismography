@@ -1,0 +1,78 @@
+{
+  "threshold": 1.9,
+  "draws": 20000,
+  "seed": 20260916,
+  "models": {
+    "z_dicta": {
+      "peaks": 126,
+      "shared": 22,
+      "nulls": {
+        "rotate": {
+          "mean": 7.52505,
+          "pct95": 12.0,
+          "max": 17,
+          "p": 0.0,
+          "p_is_upper_bound": true
+        },
+        "shuffle": {
+          "mean": 7.5322,
+          "pct95": 12.0,
+          "max": 19,
+          "p": 0.0,
+          "p_is_upper_bound": true
+        },
+        "length": {
+          "mean": 10.1467,
+          "pct95": 15.0,
+          "max": 21,
+          "p": 0.0,
+          "p_is_upper_bound": true
+        }
+      }
+    },
+    "z_berel": {
+      "peaks": 149,
+      "shared": 23,
+      "nulls": {
+        "rotate": {
+          "mean": 8.89615,
+          "pct95": 14.0,
+          "max": 21,
+          "p": 0.0,
+          "p_is_upper_bound": true
+        },
+        "shuffle": {
+          "mean": 8.88085,
+          "pct95": 14.0,
+          "max": 21,
+          "p": 0.0,
+          "p_is_upper_bound": true
+        },
+        "length": {
+          "mean": 10.9509,
+          "pct95": 16.0,
+          "max": 23,
+          "p": 0.00015,
+          "p_is_upper_bound": false
+        }
+      }
+    }
+  },
+  "length_confound": {
+    "z_gpt": {
+      "rho": -0.19877440825782455,
+      "p": 5.712359564905086e-13
+    },
+    "z_dicta": {
+      "rho": -0.23944754445528768,
+      "p": 2.7255191634679623e-18
+    },
+    "z_berel": {
+      "rho": -0.14424255860227383,
+      "p": 1.9407344587067768e-07
+    },
+    "seam_words": 10.045454545454545,
+    "other_words": 12.595744680851064,
+    "mannwhitney_p": 0.003106692174833484
+  }
+}
