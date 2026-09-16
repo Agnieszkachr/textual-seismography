@@ -1,6 +1,6 @@
 cff-version: 1.2.0
 title: "Textual Seismography: detecting redactional seams in the Book of Isaiah with dual-model transformer perplexity"
-message: "If you use this software or its results, please cite it as below. The accompanying paper was presented at EADH 2026 as 'Neural Seismography'."
+message: "If you use this software or its results, please cite it as below."
 type: software
 authors:
   - family-names: Ziemińska

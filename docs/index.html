@@ -4,50 +4,51 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Textual Seismography — Isaiah</title>
-<meta name="description" content="Detecting redactional seams in the Book of Isaiah with dual-model transformer perplexity. EADH 2026.">
+<meta name="description" content="Detecting redactional seams in the Book of Isaiah with dual-model transformer perplexity.">
 <style>
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
-:root{--ink:#331A1C;--ink2:#46292B;--red:#C1272D;--redlt:#FF7A6E;
-      --accent2:#7A6A3F;--slate:#463F3E;--mute:#877E7D;--line:#DCD6D5;--card:#F2EEED}
-body{background:#FBF9F9;color:var(--slate);font:16px/1.65 Arial,Helvetica,"Segoe UI",sans-serif;-webkit-text-size-adjust:100%}
-h1,h2,h3,.sans{font-family:Cambria,Georgia,"Times New Roman",serif}
+:root{--ink:#1C1A19;--ink2:#34302C;--red:#1C1A19;--redlt:#FFF200;
+      --accent2:#6F6A62;--slate:#3F3C39;--mute:#7E7A75;--line:#DAD7D2;--card:#F0EEEA;--hi:#FFF200;--cy:#45C8DA}
+body{background:#FAF9F7;color:var(--slate);font:16px/1.6 "Arial Nova Cond Light","Arial Nova Cond","Arial Narrow","Segoe UI",system-ui,Helvetica,Arial,sans-serif;-webkit-text-size-adjust:100%}
+h1,h2,h3,.sans{font-family:"Arial Nova Cond Light","Arial Nova Cond","Arial Narrow","Segoe UI",system-ui,Helvetica,Arial,sans-serif}
 .wrap{max-width:960px;margin:0 auto;padding-inline:20px}
 header{background:var(--ink);color:#fff;padding-block:52px 44px}
-header .eyebrow{font-size:13px;font-weight:700;letter-spacing:0;color:var(--redlt)}
+header .eyebrow{font-size:13px;font-weight:700;letter-spacing:0;color:var(--hi)}
 header h1{font-size:clamp(28px,5vw,44px);line-height:1.15;font-weight:700;margin:14px 0 10px}
-header p.sub{font-size:clamp(15px,2.4vw,19px);color:#E8DEDD;max-width:44ch}
+header p.sub{font-size:clamp(15px,2.4vw,19px);color:#E6E1D8;max-width:44ch}
 header .who{margin-top:26px;font-size:14px;color:#fff}
-header .aff{font-size:12.5px;color:#B3A6A5;line-height:1.75}
+header .aff{font-size:12.5px;color:#ABA69E;line-height:1.75}
 main section{padding-block:40px;border-bottom:1px solid var(--line)}
 main section:last-of-type{border-bottom:none}
-h2{font-size:20px;font-weight:700;letter-spacing:0;color:var(--red);margin-bottom:16px}
+h2{font-size:20px;font-weight:700;letter-spacing:0;color:var(--ink);margin-bottom:16px;background:linear-gradient(transparent 62%,var(--hi) 62%);display:inline-block;padding:0 3px}
 h3{font-size:18px;font-weight:700;color:var(--ink);margin-bottom:6px}
 p{margin-bottom:14px;max-width:72ch}
 p:last-child{margin-bottom:0}
 .lead{font-size:18px}
 .stats{display:flex;flex-wrap:wrap;gap:1px;background:var(--line);border:1px solid var(--line);border-radius:0;overflow:hidden;margin-block:8px 24px}
-.stat{flex:1 1 130px;background:#FBF9F9;padding:18px 16px;text-align:center}
-.stat b{display:block;font-family:Cambria,Georgia,serif;font-size:32px;line-height:1;color:var(--ink)}
-.stat b.r{color:var(--ink)} .stat b.g{color:var(--red)}
+.stat{flex:1 1 130px;background:#FAF9F7;padding:18px 16px;text-align:center}
+.stat b{display:block;font-size:32px;line-height:1;color:var(--ink)}
+.stat b.c{color:var(--cy)} .stat b.r{color:var(--ink)} .stat b.g{background:var(--hi);padding:0 6px}
 .stat span{display:block;margin-top:6px;font-size:12px;letter-spacing:0;color:var(--mute)}
 .cta{display:flex;flex-wrap:wrap;gap:12px;margin-top:8px}
 .btn{display:inline-block;padding:13px 22px;
      font-size:14.5px;font-weight:700;text-decoration:none;border:1px solid var(--ink)}
-.btn.primary{background:var(--red);border-color:var(--red);color:#fff}
-.btn.primary:hover{background:#A81F25}
-.btn.ghost{color:var(--ink);background:#FBF9F9}
+.btn.primary{background:var(--hi);border-color:var(--ink);color:var(--ink)}
+.btn.primary:hover{background:#E6DA00}
+.btn.ghost{color:var(--ink);background:#FAF9F7}
 .btn.ghost:hover{background:var(--card)}
 .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px}
 .card{background:var(--card);border-radius:0;padding:20px 22px}
 .card .tag{display:inline-flex;align-items:center;justify-content:center;width:27px;height:27px;
-           border-radius:50%;background:var(--red);color:#fff;font-family:Cambria,Georgia,serif;
+           border-radius:50%;background:var(--hi);color:var(--ink);
            font-size:15px;font-weight:700;margin-bottom:10px}
+.card .tag.tag2{background:var(--cy)}
 .card p{font-size:14.5px}
-.rule{background:var(--ink);color:#E8DEDD;border-radius:0;padding:22px 24px;margin-top:20px}
-.rule b{color:#fff;font-family:Cambria,Georgia,serif}
+.rule{background:var(--ink);color:#E6E1D8;border-radius:0;padding:22px 24px;margin-top:20px}
+.rule b{color:var(--hi)}
 .note{background:var(--card);border-left:3px solid var(--accent2);border-radius:0;padding:16px 18px;font-size:14.5px}
 code{font-family:Consolas,"Courier New",monospace;font-size:13.5px;background:var(--card);padding:1px 5px;border-radius:0}
-a{color:var(--red)} a:hover{color:#8E1D22}
+a{color:var(--ink);text-decoration-color:var(--hi);text-decoration-thickness:2px} a:hover{background:var(--hi)}
 footer{background:var(--card);padding-block:28px;font-size:13px;color:var(--mute)}
 footer a{color:var(--slate)}
 ul{margin:0 0 14px 20px} li{margin-bottom:5px;font-size:14.5px}
@@ -57,13 +58,12 @@ ul{margin:0 0 14px 20px} li{margin-bottom:5px;font-size:14.5px}
 
 <header>
   <div class="wrap">
-    <div class="eyebrow">EADH 2026 · Kraków</div>
+    <div class="eyebrow">Hebrew Bible · computational stylometry</div>
     <h1>Textual Seismography</h1>
     <p class="sub">Detecting redactional seams in the Book of Isaiah with dual-model transformer perplexity.</p>
     <div class="who">Agnieszka Blanka Ziemińska</div>
     <div class="aff">Pontifical University of John Paul II, Kraków<br>
       Centre for Digital Humanities, Institute of Literary Research, Polish Academy of Sciences, Warsaw</div>
-    <div class="aff" style="margin-top:14px">Presented at EADH 2026 under the paper title <em>Neural Seismography</em>.</div>
   </div>
 </header>
 
@@ -78,7 +78,7 @@ ul{margin:0 0 14px 20px} li{margin-bottom:5px;font-size:14.5px}
   <div class="stats">
     <div class="stat"><b>1,291</b><span>Verses</span></div>
     <div class="stat"><b class="r">77</b><span>GPT-Neo peaks</span></div>
-    <div class="stat"><b>126</b><span>DictaBERT peaks</span></div>
+    <div class="stat"><b class="c">126</b><span>DictaBERT peaks</span></div>
     <div class="stat"><b class="g">22</b><span>Shared seams</span></div>
     <div class="stat"><b>0.37</b><span>Pearson r</span></div>
   </div>
@@ -100,7 +100,7 @@ ul{margin:0 0 14px 20px} li{margin-bottom:5px;font-size:14.5px}
       the target verse counts. A reader stumbling.</p>
     </div>
     <div class="card">
-      <div class="tag">2</div>
+      <div class="tag tag2">2</div>
       <h3>DictaBERT — strangeness</h3>
       <p>A masked model that sees the whole verse at once. Every token is hidden in turn and restored;
       the mean log-probability gives a pseudo-perplexity. It measures whether the verse is odd in itself.
@@ -118,8 +118,9 @@ ul{margin:0 0 14px 20px} li{margin-bottom:5px;font-size:14.5px}
 <section class="wrap">
   <h2>What it found in Isaiah</h2>
   <ul>
-    <li>The boundary at <strong>chapter 40</strong> appears without being asked for: chapter 39 sits below
-      the baseline (mean CFI −0.18), chapter 40 steps above it (+0.11).</li>
+    <li><strong>Twenty-two shared seams</strong> — verses where both models independently cross the
+      threshold. Chance alone would give about 7.5 of them, or about 10 once verse length is held
+      constant; the observed count is not reached in 20,000 draws of either null.</li>
     <li><strong>Chapter 53</strong> is the most anomalous chapter in the book (mean CFI +0.37), and
       Isa 53:8 is one of the 22 shared seams — two networks that know nothing of Jewish or Christian
       interpretation marking the edges of the Fourth Servant Song.</li>
@@ -127,6 +128,10 @@ ul{margin:0 0 14px 20px} li{margin-bottom:5px;font-size:14.5px}
       which is not usually treated as a primary compositional boundary.</li>
     <li>The anti-idol material at <strong>Isa 40:19 and 46:5</strong> registers as stylistically alien to
       its surroundings — a measurable argument for treating the satires as self-contained insertions.</li>
+    <li><strong>Chapter 40</strong>, where the tradition places the main seam, is a caution rather than a
+      result. The step is there — chapter 39 at −0.18, chapter 40 at +0.11 — but it is the 13th largest of
+      the 65 chapter boundaries, and the level does not shift across it: chapters 30–39 average +0.00
+      against +0.01 for 40–49. The instrument locates verses, not regimes.</li>
   </ul>
   <p>The instrument dates nothing. It locates boundaries in the text as we now have it; every historical
   conclusion beyond that point is the philologist's work.</p>

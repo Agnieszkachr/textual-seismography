@@ -10,7 +10,7 @@ verse-length confound explicitly.
 
     python validate_agreement.py --metric output/isaiah_abstract_metric.csv
     python validate_agreement.py --metric output/isaiah_abstract_metric.csv \
-                                 --extra output/isaiah_berel_check.csv:z_berel
+                                 --extra output/isaiah_berel_control.csv:z_berel
 
 Nulls
   rotate   circular shift of one model's score series: keeps the
@@ -115,7 +115,15 @@ def main():
         print()
 
     # the confound, stated rather than hidden
-    from scipy import stats
+    try:
+        from scipy import stats
+    except ImportError:
+        print("\n(scipy not installed - skipping the verse-length confound report;"
+              " the permutation results above are unaffected)")
+        if a.json:
+            json.dump(out, open(a.json, "w"), indent=2)
+            print(f"written: {a.json}")
+        return
     print("verse length (words) vs score, Spearman rho:")
     for c in [a.causal] + list(masked):
         r, p = stats.spearmanr(d[c], nword, nan_policy="omit")
