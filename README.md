@@ -148,6 +148,43 @@ two models agree about is redaction. A planted-seam experiment — splicing fore
 homogeneous books at known positions and asking whether the detector recovers them — would test that,
 and has not been run.
 
+## Has the model read the text already?
+
+A low perplexity can mean two things: the model understands the grammar, or it remembers the words.
+`extraction_probe.py` separates them. Part of a verse is hidden and the model is asked to put it back;
+the score is the share of hidden words returned **verbatim**.
+
+```bash
+python extraction_probe.py --metric output/isaiah_abstract_metric.csv \
+    --berel-pll output/berel_pll.json --out output/extraction_probe.csv
+```
+
+Recovery over words that both tokenisers keep whole, 15 verses per set, identical masks for both models:
+
+| model | verses | 1 word hidden | 25% hidden | 50% hidden |
+|---|---|---|---|---|
+| BEREL 3.0 | its own lowest-perplexity | 100% | 100% | **73.9%** |
+| BEREL 3.0 | ordinary (both models at median) | 50.0% | 53.3% | 28.7% |
+| DictaBERT | its own lowest-perplexity | 60.0% | 54.3% | **18.9%** |
+| DictaBERT | ordinary (both models at median) | 41.7% | 8.9% | 1.2% |
+
+BEREL returns three words in four with half the verse hidden. That is recall, not prediction: a model
+working from grammar alone does not reconstruct the exact wording of a text it has not seen. On the same
+verses and the same masks DictaBERT manages 11.6%.
+
+DictaBERT is not innocent either. On the verses **it** scores as near-certain it recovers 18.9% against
+1.2% on ordinary verses — a much fainter trace than BEREL's, but not nothing. Neither model is a clean
+instrument; they differ in degree.
+
+Three caveats, since the design decides the answer. The number of mask tokens tells the model how many
+sub-word pieces the hidden word has, so the task is easier than open-ended generation; this applies
+equally to both models. The tokenisers do not split Hebrew at the same rate (1.15 against 1.25 pieces
+per word), which is why the table is restricted to words both keep whole — scoring over all words moves
+BEREL's headline figure by about a point. And hiding half a verse **as one block at the end** collapses
+recovery to 3-10% for every model and set: masked models need anchors on both sides, so a contiguous
+gap measures the architecture rather than the memory. All four conditions are in
+`output/extraction_probe.csv`.
+
 ## Reproducing
 
 ```bash

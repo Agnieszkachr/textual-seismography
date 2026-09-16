@@ -1,0 +1,1473 @@
+model,set,condition,verse,word,ok,single_token
+BEREL 3.0,"lowest perplexity, BEREL",1 word,Isa.28.9,עתיקי,1,0
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.28.9,ואת,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.28.9,שמועה,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.28.9,משדים,1,0
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.28.9,את,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.28.9,מי,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.28.9,יורה,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.28.9,מי,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.28.9,שמועה,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.28.9,גמולי,1,0
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.28.9,יבין,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.28.9,שמועה,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.28.9,גמולי,0,0
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.28.9,מחלב,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.28.9,עתיקי,0,0
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.28.9,משדים,0,0
+BEREL 3.0,"lowest perplexity, BEREL",1 word,Isa.49.15,בטנה,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.49.15,בן,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.49.15,אלה,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.49.15,לא,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.49.15,עולה,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.49.15,בן,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.49.15,בטנה,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.49.15,תשכחנה,1,0
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.49.15,לא,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.49.15,אשכחך,0,0
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.49.15,גם,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.49.15,אלה,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.49.15,תשכחנה,0,0
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.49.15,ואנכי,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.49.15,לא,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.49.15,אשכחך,0,0
+BEREL 3.0,"lowest perplexity, BEREL",1 word,Isa.5.1,נא,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.5.1,לידידי,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.5.1,שירת,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.5.1,שמן,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.5.1,אשירה,1,0
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.5.1,לידידי,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.5.1,לכרמו,1,0
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.5.1,היה,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.5.1,בקרן,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.5.1,שמן,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.5.1,כרם,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.5.1,היה,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.5.1,לידידי,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.5.1,בקרן,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.5.1,בן,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.5.1,שמן,0,1
+BEREL 3.0,"lowest perplexity, BEREL",1 word,Isa.11.4,רשע,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.11.4,ושפט,1,0
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.11.4,דלים,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.11.4,פיו,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.11.4,רשע,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.11.4,במישור,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.11.4,ארץ,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.11.4,והכה,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.11.4,ארץ,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.11.4,בשבט,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.11.4,וברוח,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.11.4,ימית,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.11.4,רשע,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.11.4,והכה,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.11.4,ארץ,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.11.4,בשבט,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.11.4,פיו,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.11.4,וברוח,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.11.4,שפתיו,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.11.4,ימית,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.11.4,רשע,0,1
+BEREL 3.0,"lowest perplexity, BEREL",1 word,Isa.65.24,עוד,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.65.24,עוד,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.65.24,מדברים,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.65.24,טרם,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.65.24,ואני,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.65.24,אענה,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.65.24,ואני,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.65.24,אשמע,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.65.24,עוד,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.65.24,הם,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.65.24,מדברים,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.65.24,ואני,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.65.24,אשמע,0,1
+BEREL 3.0,"lowest perplexity, BEREL",1 word,Isa.11.2,רוח,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.11.2,רוח,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.11.2,ובינה,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.11.2,עצה,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.11.2,ויראת,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.11.2,רוח,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.11.2,יהוה,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.11.2,רוח,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.11.2,ובינה,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.11.2,וגבורה,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.11.2,דעת,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.11.2,ויראת,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.11.2,רוח,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.11.2,עצה,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.11.2,וגבורה,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.11.2,רוח,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.11.2,דעת,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.11.2,ויראת,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.11.2,יהוה,0,1
+BEREL 3.0,"lowest perplexity, BEREL",1 word,Isa.43.7,בשמי,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.43.7,יצרתיו,1,0
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.43.7,עשיתיו,1,0
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.43.7,כל,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.43.7,הנקרא,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.43.7,אף,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.43.7,עשיתיו,1,0
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.43.7,בראתיו,1,0
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.43.7,יצרתיו,0,0
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.43.7,אף,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.43.7,עשיתיו,0,0
+BEREL 3.0,"lowest perplexity, BEREL",1 word,Isa.1.5,תוסיפו,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.1.5,עוד,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.1.5,תוסיפו,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.1.5,לבב,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.1.5,מה,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.1.5,כל,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.1.5,ראש,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.1.5,לחלי,0,0
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.1.5,וכל,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.1.5,לבב,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.1.5,כל,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.1.5,ראש,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.1.5,לחלי,0,0
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.1.5,וכל,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.1.5,לבב,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.1.5,דוי,0,1
+BEREL 3.0,"lowest perplexity, BEREL",1 word,Isa.26.4,עדי,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.26.4,יהוה,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.26.4,צור,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.26.4,ביהוה,0,0
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.26.4,עדי,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.26.4,עד,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.26.4,יהוה,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.26.4,ביה,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.26.4,יהוה,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.26.4,צור,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.26.4,עולמים,0,1
+BEREL 3.0,"lowest perplexity, BEREL",1 word,Isa.27.6,יציץ,1,0
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.27.6,הבאים,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.27.6,יעקב,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.27.6,יציץ,1,0
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.27.6,ישראל,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.27.6,ומלאו,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.27.6,פני,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.27.6,תנובה,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.27.6,ישראל,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.27.6,ומלאו,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.27.6,פני,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.27.6,תבל,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.27.6,תנובה,0,1
+BEREL 3.0,"lowest perplexity, BEREL",1 word,Isa.63.8,ויאמר,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.63.8,המה,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.63.8,לא,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.63.8,אך,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.63.8,המה,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.63.8,בנים,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.63.8,לא,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.63.8,ישקרו,0,0
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.63.8,לא,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.63.8,ישקרו,1,0
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.63.8,ויהי,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.63.8,להם,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.63.8,למושיע,0,0
+BEREL 3.0,"lowest perplexity, BEREL",1 word,Isa.13.10,חשך,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.13.10,יהלו,1,0
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.13.10,אורם,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.13.10,וירח,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.13.10,יגיה,1,0
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.13.10,כוכבי,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.13.10,וכסיליהם,1,0
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.13.10,אורם,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.13.10,חשך,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.13.10,וירח,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.13.10,לא,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.13.10,אורו,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.13.10,חשך,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.13.10,השמש,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.13.10,בצאתו,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.13.10,וירח,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.13.10,לא,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.13.10,יגיה,0,0
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.13.10,אורו,0,1
+BEREL 3.0,"lowest perplexity, BEREL",1 word,Isa.49.3,לי,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.49.3,ויאמר,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.49.3,עבדי,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.49.3,ויאמר,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.49.3,לי,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.49.3,ישראל,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.49.3,אשר,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.49.3,ישראל,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.49.3,אשר,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.49.3,בך,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.49.3,אתפאר,0,0
+BEREL 3.0,"lowest perplexity, BEREL",1 word,Isa.3.10,אמרו,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.3.10,צדיק,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.3.10,כי,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.3.10,אמרו,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.3.10,כי,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.3.10,טוב,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.3.10,מעלליהם,1,0
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.3.10,כי,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.3.10,פרי,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.3.10,מעלליהם,0,0
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.3.10,יאכלו,0,1
+BEREL 3.0,"lowest perplexity, BEREL",1 word,Isa.7.21,איש,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.7.21,ביום,1,1
+BEREL 3.0,"lowest perplexity, BEREL",25%,Isa.7.21,יחיה,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.7.21,ביום,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.7.21,איש,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.7.21,בקר,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50%,Isa.7.21,צאן,1,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.7.21,עגלת,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.7.21,בקר,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.7.21,ושתי,0,1
+BEREL 3.0,"lowest perplexity, BEREL",50% contiguous,Isa.7.21,צאן,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",1 word,Isa.40.5,יהוה,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.40.5,כבוד,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.40.5,יהוה,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.40.5,בשר,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.40.5,כבוד,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.40.5,יהוה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.40.5,וראו,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.40.5,בשר,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.40.5,יחדו,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.40.5,יהוה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.40.5,בשר,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.40.5,יחדו,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.40.5,כי,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.40.5,פי,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.40.5,יהוה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.40.5,דבר,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",1 word,Isa.60.1,יהוה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.60.1,יהוה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.60.1,זרח,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.60.1,אורי,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.60.1,אורך,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.60.1,יהוה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.60.1,עליך,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.60.1,וכבוד,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.60.1,יהוה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.60.1,עליך,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.60.1,זרח,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",1 word,Isa.2.16,אניות,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.2.16,כל,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.2.16,שכיות,0,0
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.2.16,תרשיש,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.2.16,כל,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.2.16,שכיות,0,0
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.2.16,החמדה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.16,ועל,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.16,כל,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.16,שכיות,0,0
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.16,החמדה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",1 word,Isa.7.7,אדני,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.7.7,לא,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.7.7,ולא,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.7.7,כה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.7.7,אמר,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.7.7,אדני,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.7.7,יהוה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.7.7,לא,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.7.7,תקום,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.7.7,ולא,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.7.7,תהיה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",1 word,Isa.45.7,כל,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.45.7,חשך,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.45.7,עשה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.45.7,אלה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.45.7,יוצר,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.45.7,שלום,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.45.7,ובורא,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.45.7,רע,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.45.7,אני,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.45.7,עשה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.45.7,רע,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.45.7,אני,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.45.7,יהוה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.45.7,עשה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.45.7,כל,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.45.7,אלה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",1 word,Isa.6.3,כל,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.6.3,זה,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.6.3,ואמר,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.6.3,קדוש,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.6.3,כבודו,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.6.3,זה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.6.3,אל,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.6.3,זה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.6.3,קדוש,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.6.3,קדוש,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.6.3,קדוש,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.6.3,מלא,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.6.3,קדוש,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.6.3,יהוה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.6.3,צבאות,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.6.3,מלא,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.6.3,כל,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.6.3,הארץ,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.6.3,כבודו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",1 word,Isa.38.1,חזקיהו,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.38.1,בימים,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.38.1,ישעיהו,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.38.1,אמוץ,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.38.1,ויאמר,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.38.1,ההם,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.38.1,חלה,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.38.1,ויבוא,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.38.1,אליו,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.38.1,ישעיהו,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.38.1,הנביא,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.38.1,כה,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.38.1,אמר,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.1,בן,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.1,אמוץ,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.1,הנביא,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.1,ויאמר,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.1,אליו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.1,כה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.1,אמר,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.1,יהוה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",1 word,Isa.38.7,אשר,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.38.7,לך,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.38.7,יהוה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.38.7,יהוה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.38.7,לך,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.38.7,האות,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.38.7,מאת,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.38.7,הדבר,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.38.7,הזה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.38.7,דבר,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.7,יהוה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.7,את,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.7,הדבר,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.7,הזה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.7,אשר,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.7,דבר,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",1 word,Isa.52.10,זרוע,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.52.10,כל,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.52.10,ארץ,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.52.10,את,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.52.10,אלהינו,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.52.10,חשף,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.52.10,זרוע,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.52.10,לעיני,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.52.10,כל,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.52.10,כל,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.52.10,ארץ,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.52.10,את,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.52.10,אלהינו,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.52.10,הגוים,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.52.10,וראו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.52.10,כל,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.52.10,אפסי,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.52.10,ארץ,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.52.10,את,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.52.10,ישועת,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.52.10,אלהינו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",1 word,Isa.28.10,צו,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.28.10,לצו,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.28.10,זעיר,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.28.10,שם,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.28.10,לצו,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.28.10,צו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.28.10,לצו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.28.10,קו,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.28.10,קו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.28.10,לקו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.28.10,קו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.28.10,לקו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.28.10,זעיר,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.28.10,שם,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.28.10,זעיר,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.28.10,שם,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",1 word,Isa.2.2,הימים,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.2.2,והיה,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.2.2,ההרים,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.2.2,כל,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.2.2,הגו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.2.2,באחרית,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.2.2,נכון,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.2.2,יהיה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.2.2,הר,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.2.2,בית,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.2.2,מגבעות,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.2.2,ונהרו,1,0
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.2.2,הגו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.2,בראש,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.2,ההרים,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.2,ונשא,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.2,מגבעות,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.2,ונהרו,0,0
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.2,אליו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.2,כל,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.2,הגו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",1 word,Isa.49.3,לי,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.49.3,ויאמר,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.49.3,עבדי,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.49.3,ויאמר,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.49.3,לי,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.49.3,ישראל,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.49.3,אשר,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.49.3,ישראל,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.49.3,אשר,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.49.3,בך,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.49.3,אתפאר,0,0
+BEREL 3.0,"lowest perplexity, DictaBERT",1 word,Isa.11.2,רוח,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.11.2,רוח,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.11.2,ובינה,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.11.2,עצה,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.11.2,ויראת,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.11.2,רוח,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.11.2,יהוה,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.11.2,רוח,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.11.2,ובינה,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.11.2,וגבורה,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.11.2,דעת,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.11.2,ויראת,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.11.2,רוח,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.11.2,עצה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.11.2,וגבורה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.11.2,רוח,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.11.2,דעת,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.11.2,ויראת,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.11.2,יהוה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",1 word,Isa.2.22,חדלו,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.2.22,לכם,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.2.22,האדם,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.2.22,אשר,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.2.22,חדלו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.2.22,לכם,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.2.22,מן,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.2.22,האדם,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.2.22,באפו,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.2.22,נחשב,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.22,נשמה,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.22,באפו,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.22,כי,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.22,במה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.22,נחשב,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.22,הוא,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",1 word,Isa.39.3,אליו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.39.3,ישעיהו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.39.3,חזקיהו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.39.3,אליו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",25%,Isa.39.3,אמרו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.39.3,אל,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.39.3,המלך,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.39.3,ויאמר,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.39.3,אמרו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.39.3,האנשים,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.39.3,האלה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.39.3,ומאין,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50%,Isa.39.3,אליך,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.39.3,אליו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.39.3,מה,1,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.39.3,אמרו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.39.3,האנשים,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.39.3,האלה,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.39.3,ומאין,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.39.3,יבאו,0,1
+BEREL 3.0,"lowest perplexity, DictaBERT",50% contiguous,Isa.39.3,אליך,0,1
+BEREL 3.0,"control, both at median",1 word,Isa.46.11,אביאנה,0,0
+BEREL 3.0,"control, both at median",25%,Isa.46.11,ממזרח,1,1
+BEREL 3.0,"control, both at median",25%,Isa.46.11,עיט,1,1
+BEREL 3.0,"control, both at median",25%,Isa.46.11,עצתו,0,1
+BEREL 3.0,"control, both at median",25%,Isa.46.11,אף,1,1
+BEREL 3.0,"control, both at median",50%,Isa.46.11,קרא,0,1
+BEREL 3.0,"control, both at median",50%,Isa.46.11,עיט,0,1
+BEREL 3.0,"control, both at median",50%,Isa.46.11,מארץ,0,1
+BEREL 3.0,"control, both at median",50%,Isa.46.11,מרחק,0,1
+BEREL 3.0,"control, both at median",50%,Isa.46.11,אף,0,1
+BEREL 3.0,"control, both at median",50%,Isa.46.11,אף,0,1
+BEREL 3.0,"control, both at median",50%,Isa.46.11,אביאנה,0,0
+BEREL 3.0,"control, both at median",50%,Isa.46.11,יצרתי,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.46.11,עצתי,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.46.11,אף,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.46.11,דברתי,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.46.11,אף,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.46.11,אביאנה,0,0
+BEREL 3.0,"control, both at median",50% contiguous,Isa.46.11,יצרתי,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.46.11,אף,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.46.11,אעשנה,0,0
+BEREL 3.0,"control, both at median",1 word,Isa.49.8,כה,1,1
+BEREL 3.0,"control, both at median",25%,Isa.49.8,יהוה,0,1
+BEREL 3.0,"control, both at median",25%,Isa.49.8,רצון,1,1
+BEREL 3.0,"control, both at median",25%,Isa.49.8,וביום,1,1
+BEREL 3.0,"control, both at median",25%,Isa.49.8,להקים,1,1
+BEREL 3.0,"control, both at median",50%,Isa.49.8,אמר,1,1
+BEREL 3.0,"control, both at median",50%,Isa.49.8,בעת,1,1
+BEREL 3.0,"control, both at median",50%,Isa.49.8,עניתיך,1,0
+BEREL 3.0,"control, both at median",50%,Isa.49.8,עזרתיך,0,0
+BEREL 3.0,"control, both at median",50%,Isa.49.8,ואצרך,0,0
+BEREL 3.0,"control, both at median",50%,Isa.49.8,ואתנך,0,0
+BEREL 3.0,"control, both at median",50%,Isa.49.8,להקים,0,1
+BEREL 3.0,"control, both at median",50%,Isa.49.8,ארץ,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.49.8,עזרתיך,0,0
+BEREL 3.0,"control, both at median",50% contiguous,Isa.49.8,ואצרך,0,0
+BEREL 3.0,"control, both at median",50% contiguous,Isa.49.8,ואתנך,0,0
+BEREL 3.0,"control, both at median",50% contiguous,Isa.49.8,לברית,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.49.8,עם,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.49.8,להקים,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.49.8,ארץ,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.49.8,לה,0,1
+BEREL 3.0,"control, both at median",1 word,Isa.51.17,התעוררי,0,0
+BEREL 3.0,"control, both at median",25%,Isa.51.17,מיד,0,1
+BEREL 3.0,"control, both at median",25%,Isa.51.17,יהוה,0,1
+BEREL 3.0,"control, both at median",25%,Isa.51.17,כוס,1,1
+BEREL 3.0,"control, both at median",25%,Isa.51.17,את,0,1
+BEREL 3.0,"control, both at median",50%,Isa.51.17,אשר,0,1
+BEREL 3.0,"control, both at median",50%,Isa.51.17,מיד,0,1
+BEREL 3.0,"control, both at median",50%,Isa.51.17,את,1,1
+BEREL 3.0,"control, both at median",50%,Isa.51.17,כוס,1,1
+BEREL 3.0,"control, both at median",50%,Isa.51.17,את,0,1
+BEREL 3.0,"control, both at median",50%,Isa.51.17,כוס,1,1
+BEREL 3.0,"control, both at median",50%,Isa.51.17,התרעלה,1,0
+BEREL 3.0,"control, both at median",50%,Isa.51.17,שתי,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.51.17,את,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.51.17,כוס,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.51.17,חמתו,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.51.17,את,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.51.17,קבעת,0,0
+BEREL 3.0,"control, both at median",50% contiguous,Isa.51.17,כוס,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.51.17,התרעלה,0,0
+BEREL 3.0,"control, both at median",50% contiguous,Isa.51.17,שתי,0,1
+BEREL 3.0,"control, both at median",1 word,Isa.26.13,אלהינו,0,1
+BEREL 3.0,"control, both at median",25%,Isa.26.13,אלהינו,0,1
+BEREL 3.0,"control, both at median",25%,Isa.26.13,בך,1,1
+BEREL 3.0,"control, both at median",50%,Isa.26.13,יהוה,0,1
+BEREL 3.0,"control, both at median",50%,Isa.26.13,אלהינו,0,1
+BEREL 3.0,"control, both at median",50%,Isa.26.13,בעלונו,0,0
+BEREL 3.0,"control, both at median",50%,Isa.26.13,לבד,1,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.26.13,לבד,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.26.13,בך,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.26.13,נזכיר,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.26.13,שמך,0,1
+BEREL 3.0,"control, both at median",1 word,Isa.40.20,לא,0,1
+BEREL 3.0,"control, both at median",25%,Isa.40.20,המסכן,0,1
+BEREL 3.0,"control, both at median",25%,Isa.40.20,ירקב,1,0
+BEREL 3.0,"control, both at median",25%,Isa.40.20,חרש,0,1
+BEREL 3.0,"control, both at median",25%,Isa.40.20,פסל,0,1
+BEREL 3.0,"control, both at median",50%,Isa.40.20,תרומה,0,1
+BEREL 3.0,"control, both at median",50%,Isa.40.20,עץ,0,1
+BEREL 3.0,"control, both at median",50%,Isa.40.20,לא,0,1
+BEREL 3.0,"control, both at median",50%,Isa.40.20,יבחר,0,1
+BEREL 3.0,"control, both at median",50%,Isa.40.20,לו,0,1
+BEREL 3.0,"control, both at median",50%,Isa.40.20,לא,0,1
+BEREL 3.0,"control, both at median",50%,Isa.40.20,ימוט,0,0
+BEREL 3.0,"control, both at median",50% contiguous,Isa.40.20,חכם,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.40.20,יבקש,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.40.20,לו,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.40.20,להכין,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.40.20,פסל,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.40.20,לא,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.40.20,ימוט,0,0
+BEREL 3.0,"control, both at median",1 word,Isa.36.9,אדני,0,1
+BEREL 3.0,"control, both at median",25%,Isa.36.9,תשיב,0,1
+BEREL 3.0,"control, both at median",25%,Isa.36.9,את,0,1
+BEREL 3.0,"control, both at median",25%,Isa.36.9,פני,1,1
+BEREL 3.0,"control, both at median",25%,Isa.36.9,לרכב,1,1
+BEREL 3.0,"control, both at median",50%,Isa.36.9,את,0,1
+BEREL 3.0,"control, both at median",50%,Isa.36.9,פני,0,1
+BEREL 3.0,"control, both at median",50%,Isa.36.9,פחת,0,1
+BEREL 3.0,"control, both at median",50%,Isa.36.9,עבדי,0,1
+BEREL 3.0,"control, both at median",50%,Isa.36.9,ותבטח,0,0
+BEREL 3.0,"control, both at median",50%,Isa.36.9,לך,0,1
+BEREL 3.0,"control, both at median",50%,Isa.36.9,על,0,1
+BEREL 3.0,"control, both at median",50%,Isa.36.9,מצרים,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.36.9,אדני,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.36.9,הקטנים,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.36.9,ותבטח,0,0
+BEREL 3.0,"control, both at median",50% contiguous,Isa.36.9,לך,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.36.9,על,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.36.9,מצרים,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.36.9,לרכב,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.36.9,ולפרשים,0,0
+BEREL 3.0,"control, both at median",1 word,Isa.30.18,יהוה,1,1
+BEREL 3.0,"control, both at median",25%,Isa.30.18,לחננכם,0,0
+BEREL 3.0,"control, both at median",25%,Isa.30.18,ולכן,1,1
+BEREL 3.0,"control, both at median",25%,Isa.30.18,אשרי,1,1
+BEREL 3.0,"control, both at median",25%,Isa.30.18,לו,1,1
+BEREL 3.0,"control, both at median",50%,Isa.30.18,לחננכם,0,0
+BEREL 3.0,"control, both at median",50%,Isa.30.18,ולכן,1,1
+BEREL 3.0,"control, both at median",50%,Isa.30.18,כי,0,1
+BEREL 3.0,"control, both at median",50%,Isa.30.18,משפט,0,1
+BEREL 3.0,"control, both at median",50%,Isa.30.18,יהוה,0,1
+BEREL 3.0,"control, both at median",50%,Isa.30.18,אשרי,0,1
+BEREL 3.0,"control, both at median",50%,Isa.30.18,חוכי,0,0
+BEREL 3.0,"control, both at median",50%,Isa.30.18,לו,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.30.18,כי,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.30.18,אלהי,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.30.18,משפט,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.30.18,יהוה,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.30.18,אשרי,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.30.18,כל,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.30.18,חוכי,0,0
+BEREL 3.0,"control, both at median",50% contiguous,Isa.30.18,לו,0,1
+BEREL 3.0,"control, both at median",1 word,Isa.19.22,ורפוא,1,1
+BEREL 3.0,"control, both at median",25%,Isa.19.22,את,1,1
+BEREL 3.0,"control, both at median",25%,Isa.19.22,מצרים,1,1
+BEREL 3.0,"control, both at median",25%,Isa.19.22,נגף,0,1
+BEREL 3.0,"control, both at median",50%,Isa.19.22,ונגף,0,0
+BEREL 3.0,"control, both at median",50%,Isa.19.22,יהוה,0,1
+BEREL 3.0,"control, both at median",50%,Isa.19.22,את,0,1
+BEREL 3.0,"control, both at median",50%,Isa.19.22,עד,0,1
+BEREL 3.0,"control, both at median",50%,Isa.19.22,יהוה,0,1
+BEREL 3.0,"control, both at median",50%,Isa.19.22,ורפאם,0,0
+BEREL 3.0,"control, both at median",50% contiguous,Isa.19.22,ושבו,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.19.22,עד,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.19.22,יהוה,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.19.22,ונעתר,0,0
+BEREL 3.0,"control, both at median",50% contiguous,Isa.19.22,להם,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.19.22,ורפאם,0,0
+BEREL 3.0,"control, both at median",1 word,Isa.60.13,ומקום,1,1
+BEREL 3.0,"control, both at median",25%,Isa.60.13,יבוא,1,1
+BEREL 3.0,"control, both at median",25%,Isa.60.13,ותאשור,0,0
+BEREL 3.0,"control, both at median",25%,Isa.60.13,יחדו,0,1
+BEREL 3.0,"control, both at median",25%,Isa.60.13,מקום,1,1
+BEREL 3.0,"control, both at median",50%,Isa.60.13,כבוד,1,1
+BEREL 3.0,"control, both at median",50%,Isa.60.13,אליך,0,1
+BEREL 3.0,"control, both at median",50%,Isa.60.13,ברוש,0,1
+BEREL 3.0,"control, both at median",50%,Isa.60.13,תדהר,0,0
+BEREL 3.0,"control, both at median",50%,Isa.60.13,מקום,1,1
+BEREL 3.0,"control, both at median",50%,Isa.60.13,רגלי,1,1
+BEREL 3.0,"control, both at median",50%,Isa.60.13,אכבד,0,0
+BEREL 3.0,"control, both at median",50% contiguous,Isa.60.13,יחדו,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.60.13,לפאר,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.60.13,מקום,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.60.13,מקדשי,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.60.13,ומקום,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.60.13,רגלי,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.60.13,אכבד,0,0
+BEREL 3.0,"control, both at median",1 word,Isa.46.2,יחדו,0,1
+BEREL 3.0,"control, both at median",25%,Isa.46.2,משא,1,1
+BEREL 3.0,"control, both at median",25%,Isa.46.2,הלכה,0,1
+BEREL 3.0,"control, both at median",50%,Isa.46.2,כרעו,1,0
+BEREL 3.0,"control, both at median",50%,Isa.46.2,יכלו,1,1
+BEREL 3.0,"control, both at median",50%,Isa.46.2,משא,1,1
+BEREL 3.0,"control, both at median",50%,Isa.46.2,ונפשם,0,0
+BEREL 3.0,"control, both at median",50%,Isa.46.2,בשבי,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.46.2,מלט,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.46.2,משא,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.46.2,ונפשם,0,0
+BEREL 3.0,"control, both at median",50% contiguous,Isa.46.2,בשבי,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.46.2,הלכה,0,1
+BEREL 3.0,"control, both at median",1 word,Isa.17.14,לעת,1,1
+BEREL 3.0,"control, both at median",25%,Isa.17.14,לעת,0,1
+BEREL 3.0,"control, both at median",25%,Isa.17.14,בטרם,0,1
+BEREL 3.0,"control, both at median",25%,Isa.17.14,זה,1,1
+BEREL 3.0,"control, both at median",50%,Isa.17.14,לעת,0,1
+BEREL 3.0,"control, both at median",50%,Isa.17.14,ערב,0,1
+BEREL 3.0,"control, both at median",50%,Isa.17.14,והנה,0,1
+BEREL 3.0,"control, both at median",50%,Isa.17.14,בטרם,0,1
+BEREL 3.0,"control, both at median",50%,Isa.17.14,בקר,0,1
+BEREL 3.0,"control, both at median",50%,Isa.17.14,וגורל,1,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.17.14,איננו,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.17.14,זה,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.17.14,חלק,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.17.14,שוסינו,0,0
+BEREL 3.0,"control, both at median",50% contiguous,Isa.17.14,וגורל,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.17.14,לבזזינו,0,0
+BEREL 3.0,"control, both at median",1 word,Isa.29.23,כי,1,1
+BEREL 3.0,"control, both at median",25%,Isa.29.23,יקדישו,1,0
+BEREL 3.0,"control, both at median",25%,Isa.29.23,שמי,1,1
+BEREL 3.0,"control, both at median",25%,Isa.29.23,יעקב,1,1
+BEREL 3.0,"control, both at median",25%,Isa.29.23,אלהי,0,1
+BEREL 3.0,"control, both at median",50%,Isa.29.23,בראתו,0,0
+BEREL 3.0,"control, both at median",50%,Isa.29.23,בקרבו,0,1
+BEREL 3.0,"control, both at median",50%,Isa.29.23,יקדישו,0,0
+BEREL 3.0,"control, both at median",50%,Isa.29.23,שמי,0,1
+BEREL 3.0,"control, both at median",50%,Isa.29.23,את,1,1
+BEREL 3.0,"control, both at median",50%,Isa.29.23,קדוש,1,1
+BEREL 3.0,"control, both at median",50%,Isa.29.23,יעקב,0,1
+BEREL 3.0,"control, both at median",50%,Isa.29.23,ישראל,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.29.23,והקדישו,0,0
+BEREL 3.0,"control, both at median",50% contiguous,Isa.29.23,את,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.29.23,קדוש,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.29.23,יעקב,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.29.23,ואת,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.29.23,אלהי,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.29.23,ישראל,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.29.23,יער,0,1
+BEREL 3.0,"control, both at median",1 word,Isa.58.9,הנני,0,1
+BEREL 3.0,"control, both at median",25%,Isa.58.9,יענה,1,1
+BEREL 3.0,"control, both at median",25%,Isa.58.9,תשוע,0,0
+BEREL 3.0,"control, both at median",25%,Isa.58.9,אם,1,1
+BEREL 3.0,"control, both at median",25%,Isa.58.9,ודבר,0,1
+BEREL 3.0,"control, both at median",50%,Isa.58.9,אז,1,1
+BEREL 3.0,"control, both at median",50%,Isa.58.9,יענה,1,1
+BEREL 3.0,"control, both at median",50%,Isa.58.9,תשוע,0,0
+BEREL 3.0,"control, both at median",50%,Isa.58.9,ויאמר,0,1
+BEREL 3.0,"control, both at median",50%,Isa.58.9,הנני,0,1
+BEREL 3.0,"control, both at median",50%,Isa.58.9,אם,1,1
+BEREL 3.0,"control, both at median",50%,Isa.58.9,מתוכך,0,0
+BEREL 3.0,"control, both at median",50%,Isa.58.9,שלח,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.58.9,אם,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.58.9,תסיר,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.58.9,מתוכך,0,0
+BEREL 3.0,"control, both at median",50% contiguous,Isa.58.9,מוטה,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.58.9,שלח,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.58.9,אצבע,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.58.9,ודבר,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.58.9,און,0,1
+BEREL 3.0,"control, both at median",1 word,Isa.40.10,וזרעו,0,1
+BEREL 3.0,"control, both at median",25%,Isa.40.10,וזרעו,0,1
+BEREL 3.0,"control, both at median",25%,Isa.40.10,משלה,0,1
+BEREL 3.0,"control, both at median",25%,Isa.40.10,ופעלתו,0,0
+BEREL 3.0,"control, both at median",50%,Isa.40.10,הנה,1,1
+BEREL 3.0,"control, both at median",50%,Isa.40.10,יהוה,0,1
+BEREL 3.0,"control, both at median",50%,Isa.40.10,וזרעו,0,1
+BEREL 3.0,"control, both at median",50%,Isa.40.10,הנה,1,1
+BEREL 3.0,"control, both at median",50%,Isa.40.10,שכרו,1,1
+BEREL 3.0,"control, both at median",50%,Isa.40.10,ופעלתו,0,0
+BEREL 3.0,"control, both at median",50% contiguous,Isa.40.10,לו,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.40.10,הנה,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.40.10,שכרו,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.40.10,אתו,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.40.10,ופעלתו,0,0
+BEREL 3.0,"control, both at median",50% contiguous,Isa.40.10,לפניו,0,1
+BEREL 3.0,"control, both at median",1 word,Isa.41.14,וגאלך,0,0
+BEREL 3.0,"control, both at median",25%,Isa.41.14,אל,1,1
+BEREL 3.0,"control, both at median",25%,Isa.41.14,תיראי,1,0
+BEREL 3.0,"control, both at median",25%,Isa.41.14,יהוה,0,1
+BEREL 3.0,"control, both at median",50%,Isa.41.14,תיראי,0,0
+BEREL 3.0,"control, both at median",50%,Isa.41.14,תולעת,0,1
+BEREL 3.0,"control, both at median",50%,Isa.41.14,אני,1,1
+BEREL 3.0,"control, both at median",50%,Isa.41.14,נאם,0,1
+BEREL 3.0,"control, both at median",50%,Isa.41.14,יהוה,0,1
+BEREL 3.0,"control, both at median",50%,Isa.41.14,קדוש,1,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.41.14,עזרתיך,0,0
+BEREL 3.0,"control, both at median",50% contiguous,Isa.41.14,נאם,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.41.14,יהוה,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.41.14,וגאלך,0,0
+BEREL 3.0,"control, both at median",50% contiguous,Isa.41.14,קדוש,0,1
+BEREL 3.0,"control, both at median",50% contiguous,Isa.41.14,ישראל,0,1
+DictaBERT,"lowest perplexity, BEREL",1 word,Isa.28.9,עתיקי,0,0
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.28.9,ואת,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.28.9,שמועה,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.28.9,משדים,0,0
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.28.9,את,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.28.9,מי,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.28.9,יורה,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.28.9,מי,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.28.9,שמועה,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.28.9,גמולי,0,0
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.28.9,יבין,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.28.9,שמועה,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.28.9,גמולי,0,0
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.28.9,מחלב,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.28.9,עתיקי,0,0
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.28.9,משדים,0,0
+DictaBERT,"lowest perplexity, BEREL",1 word,Isa.49.15,בטנה,1,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.49.15,בן,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.49.15,אלה,1,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.49.15,לא,1,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.49.15,עולה,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.49.15,בן,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.49.15,בטנה,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.49.15,תשכחנה,0,0
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.49.15,לא,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.49.15,אשכחך,0,0
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.49.15,גם,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.49.15,אלה,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.49.15,תשכחנה,0,0
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.49.15,ואנכי,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.49.15,לא,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.49.15,אשכחך,0,0
+DictaBERT,"lowest perplexity, BEREL",1 word,Isa.5.1,נא,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.5.1,לידידי,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.5.1,שירת,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.5.1,שמן,1,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.5.1,אשירה,0,0
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.5.1,לידידי,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.5.1,לכרמו,0,0
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.5.1,היה,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.5.1,בקרן,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.5.1,שמן,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.5.1,כרם,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.5.1,היה,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.5.1,לידידי,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.5.1,בקרן,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.5.1,בן,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.5.1,שמן,0,1
+DictaBERT,"lowest perplexity, BEREL",1 word,Isa.11.4,רשע,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.11.4,ושפט,0,0
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.11.4,דלים,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.11.4,פיו,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.11.4,רשע,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.11.4,במישור,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.11.4,ארץ,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.11.4,והכה,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.11.4,ארץ,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.11.4,בשבט,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.11.4,וברוח,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.11.4,ימית,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.11.4,רשע,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.11.4,והכה,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.11.4,ארץ,1,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.11.4,בשבט,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.11.4,פיו,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.11.4,וברוח,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.11.4,שפתיו,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.11.4,ימית,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.11.4,רשע,0,1
+DictaBERT,"lowest perplexity, BEREL",1 word,Isa.65.24,עוד,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.65.24,עוד,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.65.24,מדברים,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.65.24,טרם,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.65.24,ואני,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.65.24,אענה,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.65.24,ואני,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.65.24,אשמע,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.65.24,עוד,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.65.24,הם,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.65.24,מדברים,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.65.24,ואני,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.65.24,אשמע,0,1
+DictaBERT,"lowest perplexity, BEREL",1 word,Isa.11.2,רוח,1,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.11.2,רוח,1,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.11.2,ובינה,1,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.11.2,עצה,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.11.2,ויראת,1,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.11.2,רוח,1,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.11.2,יהוה,1,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.11.2,רוח,1,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.11.2,ובינה,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.11.2,וגבורה,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.11.2,דעת,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.11.2,ויראת,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.11.2,רוח,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.11.2,עצה,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.11.2,וגבורה,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.11.2,רוח,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.11.2,דעת,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.11.2,ויראת,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.11.2,יהוה,0,1
+DictaBERT,"lowest perplexity, BEREL",1 word,Isa.43.7,בשמי,1,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.43.7,יצרתיו,0,0
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.43.7,עשיתיו,0,0
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.43.7,כל,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.43.7,הנקרא,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.43.7,אף,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.43.7,עשיתיו,0,0
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.43.7,בראתיו,0,0
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.43.7,יצרתיו,0,0
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.43.7,אף,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.43.7,עשיתיו,0,0
+DictaBERT,"lowest perplexity, BEREL",1 word,Isa.1.5,תוסיפו,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.1.5,עוד,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.1.5,תוסיפו,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.1.5,לבב,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.1.5,מה,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.1.5,כל,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.1.5,ראש,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.1.5,לחלי,0,0
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.1.5,וכל,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.1.5,לבב,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.1.5,כל,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.1.5,ראש,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.1.5,לחלי,0,0
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.1.5,וכל,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.1.5,לבב,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.1.5,דוי,0,1
+DictaBERT,"lowest perplexity, BEREL",1 word,Isa.26.4,עדי,1,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.26.4,יהוה,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.26.4,צור,1,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.26.4,ביהוה,0,0
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.26.4,עדי,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.26.4,עד,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.26.4,יהוה,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.26.4,ביה,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.26.4,יהוה,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.26.4,צור,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.26.4,עולמים,0,1
+DictaBERT,"lowest perplexity, BEREL",1 word,Isa.27.6,יציץ,0,0
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.27.6,הבאים,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.27.6,יעקב,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.27.6,יציץ,0,0
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.27.6,ישראל,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.27.6,ומלאו,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.27.6,פני,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.27.6,תנובה,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.27.6,ישראל,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.27.6,ומלאו,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.27.6,פני,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.27.6,תבל,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.27.6,תנובה,0,1
+DictaBERT,"lowest perplexity, BEREL",1 word,Isa.63.8,ויאמר,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.63.8,המה,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.63.8,לא,1,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.63.8,אך,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.63.8,המה,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.63.8,בנים,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.63.8,לא,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.63.8,ישקרו,0,0
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.63.8,לא,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.63.8,ישקרו,0,0
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.63.8,ויהי,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.63.8,להם,1,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.63.8,למושיע,0,0
+DictaBERT,"lowest perplexity, BEREL",1 word,Isa.13.10,חשך,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.13.10,יהלו,0,0
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.13.10,אורם,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.13.10,וירח,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.13.10,יגיה,0,0
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.13.10,כוכבי,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.13.10,וכסיליהם,0,0
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.13.10,אורם,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.13.10,חשך,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.13.10,וירח,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.13.10,לא,1,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.13.10,אורו,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.13.10,חשך,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.13.10,השמש,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.13.10,בצאתו,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.13.10,וירח,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.13.10,לא,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.13.10,יגיה,0,0
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.13.10,אורו,0,1
+DictaBERT,"lowest perplexity, BEREL",1 word,Isa.49.3,לי,1,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.49.3,ויאמר,1,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.49.3,עבדי,1,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.49.3,ויאמר,1,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.49.3,לי,1,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.49.3,ישראל,1,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.49.3,אשר,1,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.49.3,ישראל,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.49.3,אשר,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.49.3,בך,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.49.3,אתפאר,0,0
+DictaBERT,"lowest perplexity, BEREL",1 word,Isa.3.10,אמרו,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.3.10,צדיק,0,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.3.10,כי,1,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.3.10,אמרו,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.3.10,כי,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.3.10,טוב,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.3.10,מעלליהם,0,0
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.3.10,כי,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.3.10,פרי,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.3.10,מעלליהם,0,0
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.3.10,יאכלו,0,1
+DictaBERT,"lowest perplexity, BEREL",1 word,Isa.7.21,איש,1,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.7.21,ביום,1,1
+DictaBERT,"lowest perplexity, BEREL",25%,Isa.7.21,יחיה,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.7.21,ביום,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.7.21,איש,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.7.21,בקר,0,1
+DictaBERT,"lowest perplexity, BEREL",50%,Isa.7.21,צאן,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.7.21,עגלת,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.7.21,בקר,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.7.21,ושתי,0,1
+DictaBERT,"lowest perplexity, BEREL",50% contiguous,Isa.7.21,צאן,0,1
+DictaBERT,"lowest perplexity, DictaBERT",1 word,Isa.40.5,יהוה,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.40.5,כבוד,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.40.5,יהוה,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.40.5,בשר,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.40.5,כבוד,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.40.5,יהוה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.40.5,וראו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.40.5,בשר,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.40.5,יחדו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.40.5,יהוה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.40.5,בשר,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.40.5,יחדו,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.40.5,כי,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.40.5,פי,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.40.5,יהוה,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.40.5,דבר,0,1
+DictaBERT,"lowest perplexity, DictaBERT",1 word,Isa.60.1,יהוה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.60.1,יהוה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.60.1,זרח,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.60.1,אורי,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.60.1,אורך,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.60.1,יהוה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.60.1,עליך,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.60.1,וכבוד,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.60.1,יהוה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.60.1,עליך,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.60.1,זרח,0,1
+DictaBERT,"lowest perplexity, DictaBERT",1 word,Isa.2.16,אניות,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.2.16,כל,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.2.16,שכיות,1,0
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.2.16,תרשיש,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.2.16,כל,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.2.16,שכיות,0,0
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.2.16,החמדה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.16,ועל,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.16,כל,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.16,שכיות,0,0
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.16,החמדה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",1 word,Isa.7.7,אדני,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.7.7,לא,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.7.7,ולא,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.7.7,כה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.7.7,אמר,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.7.7,אדני,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.7.7,יהוה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.7.7,לא,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.7.7,תקום,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.7.7,ולא,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.7.7,תהיה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",1 word,Isa.45.7,כל,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.45.7,חשך,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.45.7,עשה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.45.7,אלה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.45.7,יוצר,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.45.7,שלום,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.45.7,ובורא,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.45.7,רע,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.45.7,אני,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.45.7,עשה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.45.7,רע,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.45.7,אני,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.45.7,יהוה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.45.7,עשה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.45.7,כל,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.45.7,אלה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",1 word,Isa.6.3,כל,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.6.3,זה,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.6.3,ואמר,0,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.6.3,קדוש,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.6.3,כבודו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.6.3,זה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.6.3,אל,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.6.3,זה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.6.3,קדוש,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.6.3,קדוש,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.6.3,קדוש,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.6.3,מלא,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.6.3,קדוש,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.6.3,יהוה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.6.3,צבאות,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.6.3,מלא,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.6.3,כל,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.6.3,הארץ,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.6.3,כבודו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",1 word,Isa.38.1,חזקיהו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.38.1,בימים,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.38.1,ישעיהו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.38.1,אמוץ,0,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.38.1,ויאמר,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.38.1,ההם,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.38.1,חלה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.38.1,ויבוא,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.38.1,אליו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.38.1,ישעיהו,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.38.1,הנביא,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.38.1,כה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.38.1,אמר,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.1,בן,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.1,אמוץ,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.1,הנביא,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.1,ויאמר,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.1,אליו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.1,כה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.1,אמר,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.1,יהוה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",1 word,Isa.38.7,אשר,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.38.7,לך,0,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.38.7,יהוה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.38.7,יהוה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.38.7,לך,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.38.7,האות,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.38.7,מאת,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.38.7,הדבר,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.38.7,הזה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.38.7,דבר,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.7,יהוה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.7,את,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.7,הדבר,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.7,הזה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.7,אשר,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.38.7,דבר,0,1
+DictaBERT,"lowest perplexity, DictaBERT",1 word,Isa.52.10,זרוע,0,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.52.10,כל,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.52.10,ארץ,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.52.10,את,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.52.10,אלהינו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.52.10,חשף,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.52.10,זרוע,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.52.10,לעיני,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.52.10,כל,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.52.10,כל,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.52.10,ארץ,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.52.10,את,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.52.10,אלהינו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.52.10,הגוים,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.52.10,וראו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.52.10,כל,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.52.10,אפסי,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.52.10,ארץ,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.52.10,את,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.52.10,ישועת,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.52.10,אלהינו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",1 word,Isa.28.10,צו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.28.10,לצו,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.28.10,זעיר,0,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.28.10,שם,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.28.10,לצו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.28.10,צו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.28.10,לצו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.28.10,קו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.28.10,קו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.28.10,לקו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.28.10,קו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.28.10,לקו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.28.10,זעיר,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.28.10,שם,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.28.10,זעיר,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.28.10,שם,0,1
+DictaBERT,"lowest perplexity, DictaBERT",1 word,Isa.2.2,הימים,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.2.2,והיה,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.2.2,ההרים,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.2.2,כל,0,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.2.2,הגו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.2.2,באחרית,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.2.2,נכון,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.2.2,יהיה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.2.2,הר,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.2.2,בית,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.2.2,מגבעות,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.2.2,ונהרו,0,0
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.2.2,הגו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.2,בראש,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.2,ההרים,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.2,ונשא,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.2,מגבעות,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.2,ונהרו,0,0
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.2,אליו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.2,כל,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.2,הגו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",1 word,Isa.49.3,לי,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.49.3,ויאמר,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.49.3,עבדי,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.49.3,ויאמר,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.49.3,לי,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.49.3,ישראל,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.49.3,אשר,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.49.3,ישראל,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.49.3,אשר,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.49.3,בך,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.49.3,אתפאר,0,0
+DictaBERT,"lowest perplexity, DictaBERT",1 word,Isa.11.2,רוח,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.11.2,רוח,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.11.2,ובינה,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.11.2,עצה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.11.2,ויראת,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.11.2,רוח,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.11.2,יהוה,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.11.2,רוח,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.11.2,ובינה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.11.2,וגבורה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.11.2,דעת,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.11.2,ויראת,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.11.2,רוח,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.11.2,עצה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.11.2,וגבורה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.11.2,רוח,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.11.2,דעת,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.11.2,ויראת,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.11.2,יהוה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",1 word,Isa.2.22,חדלו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.2.22,לכם,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.2.22,האדם,1,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.2.22,אשר,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.2.22,חדלו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.2.22,לכם,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.2.22,מן,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.2.22,האדם,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.2.22,באפו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.2.22,נחשב,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.22,נשמה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.22,באפו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.22,כי,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.22,במה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.22,נחשב,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.2.22,הוא,0,1
+DictaBERT,"lowest perplexity, DictaBERT",1 word,Isa.39.3,אליו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.39.3,ישעיהו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.39.3,חזקיהו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.39.3,אליו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",25%,Isa.39.3,אמרו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.39.3,אל,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.39.3,המלך,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.39.3,ויאמר,1,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.39.3,אמרו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.39.3,האנשים,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.39.3,האלה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.39.3,ומאין,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50%,Isa.39.3,אליך,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.39.3,אליו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.39.3,מה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.39.3,אמרו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.39.3,האנשים,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.39.3,האלה,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.39.3,ומאין,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.39.3,יבאו,0,1
+DictaBERT,"lowest perplexity, DictaBERT",50% contiguous,Isa.39.3,אליך,0,1
+DictaBERT,"control, both at median",1 word,Isa.46.11,אביאנה,0,0
+DictaBERT,"control, both at median",25%,Isa.46.11,ממזרח,0,1
+DictaBERT,"control, both at median",25%,Isa.46.11,עיט,0,1
+DictaBERT,"control, both at median",25%,Isa.46.11,עצתו,0,1
+DictaBERT,"control, both at median",25%,Isa.46.11,אף,0,1
+DictaBERT,"control, both at median",50%,Isa.46.11,קרא,0,1
+DictaBERT,"control, both at median",50%,Isa.46.11,עיט,0,1
+DictaBERT,"control, both at median",50%,Isa.46.11,מארץ,0,1
+DictaBERT,"control, both at median",50%,Isa.46.11,מרחק,0,1
+DictaBERT,"control, both at median",50%,Isa.46.11,אף,0,1
+DictaBERT,"control, both at median",50%,Isa.46.11,אף,0,1
+DictaBERT,"control, both at median",50%,Isa.46.11,אביאנה,0,0
+DictaBERT,"control, both at median",50%,Isa.46.11,יצרתי,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.46.11,עצתי,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.46.11,אף,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.46.11,דברתי,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.46.11,אף,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.46.11,אביאנה,0,0
+DictaBERT,"control, both at median",50% contiguous,Isa.46.11,יצרתי,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.46.11,אף,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.46.11,אעשנה,0,0
+DictaBERT,"control, both at median",1 word,Isa.49.8,כה,1,1
+DictaBERT,"control, both at median",25%,Isa.49.8,יהוה,0,1
+DictaBERT,"control, both at median",25%,Isa.49.8,רצון,0,1
+DictaBERT,"control, both at median",25%,Isa.49.8,וביום,0,1
+DictaBERT,"control, both at median",25%,Isa.49.8,להקים,0,1
+DictaBERT,"control, both at median",50%,Isa.49.8,אמר,1,1
+DictaBERT,"control, both at median",50%,Isa.49.8,בעת,0,1
+DictaBERT,"control, both at median",50%,Isa.49.8,עניתיך,0,0
+DictaBERT,"control, both at median",50%,Isa.49.8,עזרתיך,0,0
+DictaBERT,"control, both at median",50%,Isa.49.8,ואצרך,0,0
+DictaBERT,"control, both at median",50%,Isa.49.8,ואתנך,0,0
+DictaBERT,"control, both at median",50%,Isa.49.8,להקים,0,1
+DictaBERT,"control, both at median",50%,Isa.49.8,ארץ,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.49.8,עזרתיך,0,0
+DictaBERT,"control, both at median",50% contiguous,Isa.49.8,ואצרך,0,0
+DictaBERT,"control, both at median",50% contiguous,Isa.49.8,ואתנך,0,0
+DictaBERT,"control, both at median",50% contiguous,Isa.49.8,לברית,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.49.8,עם,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.49.8,להקים,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.49.8,ארץ,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.49.8,לה,0,1
+DictaBERT,"control, both at median",1 word,Isa.51.17,התעוררי,0,0
+DictaBERT,"control, both at median",25%,Isa.51.17,מיד,0,1
+DictaBERT,"control, both at median",25%,Isa.51.17,יהוה,0,1
+DictaBERT,"control, both at median",25%,Isa.51.17,כוס,0,1
+DictaBERT,"control, both at median",25%,Isa.51.17,את,0,1
+DictaBERT,"control, both at median",50%,Isa.51.17,אשר,0,1
+DictaBERT,"control, both at median",50%,Isa.51.17,מיד,0,1
+DictaBERT,"control, both at median",50%,Isa.51.17,את,0,1
+DictaBERT,"control, both at median",50%,Isa.51.17,כוס,0,1
+DictaBERT,"control, both at median",50%,Isa.51.17,את,0,1
+DictaBERT,"control, both at median",50%,Isa.51.17,כוס,0,1
+DictaBERT,"control, both at median",50%,Isa.51.17,התרעלה,0,0
+DictaBERT,"control, both at median",50%,Isa.51.17,שתי,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.51.17,את,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.51.17,כוס,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.51.17,חמתו,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.51.17,את,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.51.17,קבעת,0,0
+DictaBERT,"control, both at median",50% contiguous,Isa.51.17,כוס,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.51.17,התרעלה,0,0
+DictaBERT,"control, both at median",50% contiguous,Isa.51.17,שתי,0,1
+DictaBERT,"control, both at median",1 word,Isa.26.13,אלהינו,1,1
+DictaBERT,"control, both at median",25%,Isa.26.13,אלהינו,1,1
+DictaBERT,"control, both at median",25%,Isa.26.13,בך,0,1
+DictaBERT,"control, both at median",50%,Isa.26.13,יהוה,0,1
+DictaBERT,"control, both at median",50%,Isa.26.13,אלהינו,0,1
+DictaBERT,"control, both at median",50%,Isa.26.13,בעלונו,0,0
+DictaBERT,"control, both at median",50%,Isa.26.13,לבד,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.26.13,לבד,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.26.13,בך,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.26.13,נזכיר,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.26.13,שמך,0,1
+DictaBERT,"control, both at median",1 word,Isa.40.20,לא,1,1
+DictaBERT,"control, both at median",25%,Isa.40.20,המסכן,0,1
+DictaBERT,"control, both at median",25%,Isa.40.20,ירקב,0,0
+DictaBERT,"control, both at median",25%,Isa.40.20,חרש,0,1
+DictaBERT,"control, both at median",25%,Isa.40.20,פסל,0,1
+DictaBERT,"control, both at median",50%,Isa.40.20,תרומה,0,1
+DictaBERT,"control, both at median",50%,Isa.40.20,עץ,0,1
+DictaBERT,"control, both at median",50%,Isa.40.20,לא,0,1
+DictaBERT,"control, both at median",50%,Isa.40.20,יבחר,0,1
+DictaBERT,"control, both at median",50%,Isa.40.20,לו,0,1
+DictaBERT,"control, both at median",50%,Isa.40.20,לא,0,1
+DictaBERT,"control, both at median",50%,Isa.40.20,ימוט,0,0
+DictaBERT,"control, both at median",50% contiguous,Isa.40.20,חכם,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.40.20,יבקש,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.40.20,לו,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.40.20,להכין,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.40.20,פסל,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.40.20,לא,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.40.20,ימוט,0,0
+DictaBERT,"control, both at median",1 word,Isa.36.9,אדני,0,1
+DictaBERT,"control, both at median",25%,Isa.36.9,תשיב,0,1
+DictaBERT,"control, both at median",25%,Isa.36.9,את,0,1
+DictaBERT,"control, both at median",25%,Isa.36.9,פני,0,1
+DictaBERT,"control, both at median",25%,Isa.36.9,לרכב,0,1
+DictaBERT,"control, both at median",50%,Isa.36.9,את,0,1
+DictaBERT,"control, both at median",50%,Isa.36.9,פני,0,1
+DictaBERT,"control, both at median",50%,Isa.36.9,פחת,0,1
+DictaBERT,"control, both at median",50%,Isa.36.9,עבדי,0,1
+DictaBERT,"control, both at median",50%,Isa.36.9,ותבטח,0,0
+DictaBERT,"control, both at median",50%,Isa.36.9,לך,0,1
+DictaBERT,"control, both at median",50%,Isa.36.9,על,0,1
+DictaBERT,"control, both at median",50%,Isa.36.9,מצרים,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.36.9,אדני,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.36.9,הקטנים,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.36.9,ותבטח,0,0
+DictaBERT,"control, both at median",50% contiguous,Isa.36.9,לך,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.36.9,על,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.36.9,מצרים,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.36.9,לרכב,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.36.9,ולפרשים,0,0
+DictaBERT,"control, both at median",1 word,Isa.30.18,יהוה,1,1
+DictaBERT,"control, both at median",25%,Isa.30.18,לחננכם,0,0
+DictaBERT,"control, both at median",25%,Isa.30.18,ולכן,0,1
+DictaBERT,"control, both at median",25%,Isa.30.18,אשרי,0,1
+DictaBERT,"control, both at median",25%,Isa.30.18,לו,0,1
+DictaBERT,"control, both at median",50%,Isa.30.18,לחננכם,0,0
+DictaBERT,"control, both at median",50%,Isa.30.18,ולכן,0,1
+DictaBERT,"control, both at median",50%,Isa.30.18,כי,0,1
+DictaBERT,"control, both at median",50%,Isa.30.18,משפט,0,1
+DictaBERT,"control, both at median",50%,Isa.30.18,יהוה,0,1
+DictaBERT,"control, both at median",50%,Isa.30.18,אשרי,0,1
+DictaBERT,"control, both at median",50%,Isa.30.18,חוכי,0,0
+DictaBERT,"control, both at median",50%,Isa.30.18,לו,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.30.18,כי,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.30.18,אלהי,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.30.18,משפט,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.30.18,יהוה,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.30.18,אשרי,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.30.18,כל,1,1
+DictaBERT,"control, both at median",50% contiguous,Isa.30.18,חוכי,0,0
+DictaBERT,"control, both at median",50% contiguous,Isa.30.18,לו,0,1
+DictaBERT,"control, both at median",1 word,Isa.19.22,ורפוא,0,1
+DictaBERT,"control, both at median",25%,Isa.19.22,את,1,1
+DictaBERT,"control, both at median",25%,Isa.19.22,מצרים,1,1
+DictaBERT,"control, both at median",25%,Isa.19.22,נגף,1,1
+DictaBERT,"control, both at median",50%,Isa.19.22,ונגף,0,0
+DictaBERT,"control, both at median",50%,Isa.19.22,יהוה,0,1
+DictaBERT,"control, both at median",50%,Isa.19.22,את,0,1
+DictaBERT,"control, both at median",50%,Isa.19.22,עד,0,1
+DictaBERT,"control, both at median",50%,Isa.19.22,יהוה,0,1
+DictaBERT,"control, both at median",50%,Isa.19.22,ורפאם,0,0
+DictaBERT,"control, both at median",50% contiguous,Isa.19.22,ושבו,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.19.22,עד,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.19.22,יהוה,1,1
+DictaBERT,"control, both at median",50% contiguous,Isa.19.22,ונעתר,0,0
+DictaBERT,"control, both at median",50% contiguous,Isa.19.22,להם,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.19.22,ורפאם,0,0
+DictaBERT,"control, both at median",1 word,Isa.60.13,ומקום,0,1
+DictaBERT,"control, both at median",25%,Isa.60.13,יבוא,0,1
+DictaBERT,"control, both at median",25%,Isa.60.13,ותאשור,0,0
+DictaBERT,"control, both at median",25%,Isa.60.13,יחדו,0,1
+DictaBERT,"control, both at median",25%,Isa.60.13,מקום,0,1
+DictaBERT,"control, both at median",50%,Isa.60.13,כבוד,0,1
+DictaBERT,"control, both at median",50%,Isa.60.13,אליך,0,1
+DictaBERT,"control, both at median",50%,Isa.60.13,ברוש,0,1
+DictaBERT,"control, both at median",50%,Isa.60.13,תדהר,0,0
+DictaBERT,"control, both at median",50%,Isa.60.13,מקום,0,1
+DictaBERT,"control, both at median",50%,Isa.60.13,רגלי,0,1
+DictaBERT,"control, both at median",50%,Isa.60.13,אכבד,0,0
+DictaBERT,"control, both at median",50% contiguous,Isa.60.13,יחדו,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.60.13,לפאר,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.60.13,מקום,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.60.13,מקדשי,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.60.13,ומקום,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.60.13,רגלי,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.60.13,אכבד,0,0
+DictaBERT,"control, both at median",1 word,Isa.46.2,יחדו,0,1
+DictaBERT,"control, both at median",25%,Isa.46.2,משא,0,1
+DictaBERT,"control, both at median",25%,Isa.46.2,הלכה,0,1
+DictaBERT,"control, both at median",50%,Isa.46.2,כרעו,0,0
+DictaBERT,"control, both at median",50%,Isa.46.2,יכלו,0,1
+DictaBERT,"control, both at median",50%,Isa.46.2,משא,0,1
+DictaBERT,"control, both at median",50%,Isa.46.2,ונפשם,0,0
+DictaBERT,"control, both at median",50%,Isa.46.2,בשבי,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.46.2,מלט,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.46.2,משא,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.46.2,ונפשם,0,0
+DictaBERT,"control, both at median",50% contiguous,Isa.46.2,בשבי,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.46.2,הלכה,0,1
+DictaBERT,"control, both at median",1 word,Isa.17.14,לעת,1,1
+DictaBERT,"control, both at median",25%,Isa.17.14,לעת,0,1
+DictaBERT,"control, both at median",25%,Isa.17.14,בטרם,0,1
+DictaBERT,"control, both at median",25%,Isa.17.14,זה,0,1
+DictaBERT,"control, both at median",50%,Isa.17.14,לעת,0,1
+DictaBERT,"control, both at median",50%,Isa.17.14,ערב,0,1
+DictaBERT,"control, both at median",50%,Isa.17.14,והנה,0,1
+DictaBERT,"control, both at median",50%,Isa.17.14,בטרם,0,1
+DictaBERT,"control, both at median",50%,Isa.17.14,בקר,0,1
+DictaBERT,"control, both at median",50%,Isa.17.14,וגורל,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.17.14,איננו,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.17.14,זה,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.17.14,חלק,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.17.14,שוסינו,0,0
+DictaBERT,"control, both at median",50% contiguous,Isa.17.14,וגורל,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.17.14,לבזזינו,0,0
+DictaBERT,"control, both at median",1 word,Isa.29.23,כי,0,1
+DictaBERT,"control, both at median",25%,Isa.29.23,יקדישו,0,0
+DictaBERT,"control, both at median",25%,Isa.29.23,שמי,0,1
+DictaBERT,"control, both at median",25%,Isa.29.23,יעקב,0,1
+DictaBERT,"control, both at median",25%,Isa.29.23,אלהי,0,1
+DictaBERT,"control, both at median",50%,Isa.29.23,בראתו,0,0
+DictaBERT,"control, both at median",50%,Isa.29.23,בקרבו,0,1
+DictaBERT,"control, both at median",50%,Isa.29.23,יקדישו,0,0
+DictaBERT,"control, both at median",50%,Isa.29.23,שמי,0,1
+DictaBERT,"control, both at median",50%,Isa.29.23,את,0,1
+DictaBERT,"control, both at median",50%,Isa.29.23,קדוש,0,1
+DictaBERT,"control, both at median",50%,Isa.29.23,יעקב,0,1
+DictaBERT,"control, both at median",50%,Isa.29.23,ישראל,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.29.23,והקדישו,0,0
+DictaBERT,"control, both at median",50% contiguous,Isa.29.23,את,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.29.23,קדוש,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.29.23,יעקב,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.29.23,ואת,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.29.23,אלהי,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.29.23,ישראל,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.29.23,יער,0,1
+DictaBERT,"control, both at median",1 word,Isa.58.9,הנני,0,1
+DictaBERT,"control, both at median",25%,Isa.58.9,יענה,0,1
+DictaBERT,"control, both at median",25%,Isa.58.9,תשוע,0,0
+DictaBERT,"control, both at median",25%,Isa.58.9,אם,0,1
+DictaBERT,"control, both at median",25%,Isa.58.9,ודבר,0,1
+DictaBERT,"control, both at median",50%,Isa.58.9,אז,0,1
+DictaBERT,"control, both at median",50%,Isa.58.9,יענה,0,1
+DictaBERT,"control, both at median",50%,Isa.58.9,תשוע,0,0
+DictaBERT,"control, both at median",50%,Isa.58.9,ויאמר,0,1
+DictaBERT,"control, both at median",50%,Isa.58.9,הנני,0,1
+DictaBERT,"control, both at median",50%,Isa.58.9,אם,0,1
+DictaBERT,"control, both at median",50%,Isa.58.9,מתוכך,0,0
+DictaBERT,"control, both at median",50%,Isa.58.9,שלח,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.58.9,אם,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.58.9,תסיר,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.58.9,מתוכך,0,0
+DictaBERT,"control, both at median",50% contiguous,Isa.58.9,מוטה,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.58.9,שלח,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.58.9,אצבע,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.58.9,ודבר,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.58.9,און,0,1
+DictaBERT,"control, both at median",1 word,Isa.40.10,וזרעו,0,1
+DictaBERT,"control, both at median",25%,Isa.40.10,וזרעו,0,1
+DictaBERT,"control, both at median",25%,Isa.40.10,משלה,0,1
+DictaBERT,"control, both at median",25%,Isa.40.10,ופעלתו,0,0
+DictaBERT,"control, both at median",50%,Isa.40.10,הנה,0,1
+DictaBERT,"control, both at median",50%,Isa.40.10,יהוה,0,1
+DictaBERT,"control, both at median",50%,Isa.40.10,וזרעו,0,1
+DictaBERT,"control, both at median",50%,Isa.40.10,הנה,0,1
+DictaBERT,"control, both at median",50%,Isa.40.10,שכרו,0,1
+DictaBERT,"control, both at median",50%,Isa.40.10,ופעלתו,0,0
+DictaBERT,"control, both at median",50% contiguous,Isa.40.10,לו,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.40.10,הנה,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.40.10,שכרו,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.40.10,אתו,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.40.10,ופעלתו,0,0
+DictaBERT,"control, both at median",50% contiguous,Isa.40.10,לפניו,0,1
+DictaBERT,"control, both at median",1 word,Isa.41.14,וגאלך,0,0
+DictaBERT,"control, both at median",25%,Isa.41.14,אל,0,1
+DictaBERT,"control, both at median",25%,Isa.41.14,תיראי,0,0
+DictaBERT,"control, both at median",25%,Isa.41.14,יהוה,0,1
+DictaBERT,"control, both at median",50%,Isa.41.14,תיראי,0,0
+DictaBERT,"control, both at median",50%,Isa.41.14,תולעת,0,1
+DictaBERT,"control, both at median",50%,Isa.41.14,אני,0,1
+DictaBERT,"control, both at median",50%,Isa.41.14,נאם,0,1
+DictaBERT,"control, both at median",50%,Isa.41.14,יהוה,0,1
+DictaBERT,"control, both at median",50%,Isa.41.14,קדוש,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.41.14,עזרתיך,0,0
+DictaBERT,"control, both at median",50% contiguous,Isa.41.14,נאם,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.41.14,יהוה,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.41.14,וגאלך,0,0
+DictaBERT,"control, both at median",50% contiguous,Isa.41.14,קדוש,0,1
+DictaBERT,"control, both at median",50% contiguous,Isa.41.14,ישראל,0,1
