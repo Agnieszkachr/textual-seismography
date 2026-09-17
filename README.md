@@ -1,4 +1,4 @@
-# Textual Seismography
+# Textual Seismography 
 
 **Detecting redactional seams in the Book of Isaiah with dual-model transformer perplexity**
 
